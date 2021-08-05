@@ -8,7 +8,7 @@ function Homepage() {
                 <img width="110" src="https://avatars.githubusercontent.com/u/56342160?v=4" alt="Neelesh" />
             </div>
             <div className="intro">
-                <h1>Hey👋, I'm a passionate Frontend Engineer with a knack over Javascript.</h1>
+                <h1>Hey👋, I'm a passionate Frontend Development Engineer with a knack over Javascript.</h1>
             </div>
             <div className="tech-stack">
                 <img
