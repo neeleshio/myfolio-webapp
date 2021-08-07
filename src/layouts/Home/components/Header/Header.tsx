@@ -1,5 +1,6 @@
 import { FaLinkedin, FaGithubSquare, FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { BsArrowRight } from "react-icons/bs";
 
 const Header = () => {
     return (
@@ -20,9 +21,8 @@ const Header = () => {
             </div>
             <div className="navbar_container">
                 <a href="/">Home</a>
-                <a href="/#blog">Blog</a>
-                <a href="/#dsa">DSA</a>
-                <a href="/#contact">Contact</a>
+                <a href="/#blog">Journal</a>
+                <a href="/#dsa">Get in touch</a>
             </div>
         </nav>
     )
