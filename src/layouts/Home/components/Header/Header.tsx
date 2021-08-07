@@ -4,27 +4,26 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Header = () => {
     return (
-        <nav id="header">
-            <div className="social_container">
-                <a href="mailto:neeleshio@yandex.com" target="_blank" rel="noopener noreferrer">
-                    <i><FiMail /></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <i><FaLinkedin /></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <i><FaGithubSquare /></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                    <i><FaInstagram /></i>
-                </a>
+        <header id="header">
+
+            <div className="navbar">
+                <div className="logo">
+                    <h1>IO</h1>
+                </div>
+                <div className="navbar_container">
+                    <a href="/">Home</a>
+                    <a href="/#blog">Journal</a>
+                    <a href="/#dsa">Get in touch</a>
+                    <a href="/" className="linkedin">LinkedIn</a>
+                    <a href="/" className="youtube">Youtube</a>
+                    <a href="/" className="github">Github</a>
+                </div>
             </div>
-            <div className="navbar_container">
-                <a href="/">Home</a>
-                <a href="/#blog">Journal</a>
-                <a href="/#dsa">Get in touch</a>
-            </div>
-        </nav>
+
+            {/* <div className="notification_banner">
+                <h4>New video out. Watch now</h4>
+            </div> */}
+        </header>
     )
 }
 
