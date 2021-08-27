@@ -1,16 +1,16 @@
 import React from 'react'
 import { Switch } from 'react-router-dom'
-import { ProtectedRoute, PublicRoute } from './utils'
-import { Home } from './layouts'
-import { Homepage } from './views'
+import { PublicRoute } from './utils'
+import { MainLayout } from './layouts'
+import { Portfolio } from './views'
 
 function Routes() {
     return (
         <Switch>
-            <ProtectedRoute
+            <PublicRoute
                 path="/"
-                component={Homepage}
-                layout={Home}
+                layout={MainLayout}
+                component={Portfolio}
                 exact
             />
         </Switch>

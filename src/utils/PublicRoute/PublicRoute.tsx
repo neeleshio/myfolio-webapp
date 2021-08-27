@@ -1,11 +1,26 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
-function PublicRoute() {
+type Props = {
+    path: string,
+    component: React.ComponentType<any>,
+    layout: React.ComponentType<any>,
+    exact: boolean
+}
+
+const PublicRoute: React.FC<Props> = (props) => {
+    const { component: Component, layout: Layout, ...rest } = props
+
     return (
-        <div>
-            <h1>PublicRoute</h1>
-        </div>
+        <Route
+            {...rest}
+            render={(matchProps) => (
+                <Layout>
+                    <Component {...matchProps} />
+                </Layout>
+            )}
+        />
     )
 }
 
-export default PublicRoute
+export default PublicRoute;

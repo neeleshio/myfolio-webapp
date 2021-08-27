@@ -1,0 +1,112 @@
+@import 'config.scss';
+
+#mainLayout {
+    display: flex;
+    background-color: $layout-navyblue-bg;
+
+    #sidebar {
+        width: 150px;
+        position: fixed;
+
+        .sidebar-container {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+
+            .sidebar-lists {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    margin-bottom: 10px;
+                    background-color: $layout-navyblue-bg;
+                    color: $primary-alicewhite-bg;
+                    width: 140px;
+                    height: 40px;
+                    padding: 10px 0 0 30px;
+                    border-radius: 2px;
+                    // text-align: center;
+
+                    
+                    &.active {
+                        background-color: #010422;
+                        color: $secondary-white-bg;
+                    }
+                }
+
+                a {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #topbar {
+        margin: 25px 34px 25px 34px;
+
+        .topbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .topbar_right {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                .social-links {
+                    height: 20px;
+                    min-width: 250px;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin: 0 15px;
+                        }
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                            border-radius: 1px;
+                        }
+                    }
+                }
+
+                .extra-buttons {
+                    height: 20px;
+
+                    button {
+                        margin: 0 15px;
+                    }
+
+                    button, svg {
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        background-color: unset;
+                    }
+                }
+            }
+        }
+
+        .section-title {
+            h1 {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
