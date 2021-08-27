@@ -2,7 +2,7 @@
 
 #mainLayout {
     display: flex;
-    background-color: $layout-navyblue-bg;
+    // background-color: $layout-navyblue-bg;
 
     #sidebar {
         width: 150px;
@@ -51,7 +51,12 @@
     }
 
     #topbar {
-        margin: 25px 34px 25px 34px;
+        position: fixed;
+        width: 100%;
+        padding: 16px 0 8px 0;
+        // margin: 0 22px;
+        // margin: 25px 34px 25px 34px;
+        // background-color: aqua;
 
         .topbar-container {
             display: flex;
@@ -63,6 +68,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                margin-right: 120px;
 
                 .social-links {
                     height: 20px;
@@ -102,9 +108,11 @@
         }
 
         .section-title {
+            padding-left: 130px;
+
             h1 {
-                font-size: 17px;
-                font-weight: 600;
+                font-size: 20px;
+                font-weight: 800;
             }
         }
     }

@@ -1,6 +1,9 @@
 @import 'config.scss';
 
 #portfolio {
+    margin-top: 80px;
+    padding: 0px 100px 0px 100px;
+
     .grid-container {
         display: grid;
         grid-template-columns: 60% 40%;
@@ -212,7 +215,7 @@
     
     ::-webkit-scrollbar
     {
-        width: 8px;
+        width: 5px;
         background-color: #F5F5F5;
     }
     

@@ -8,7 +8,7 @@ function Topbar() {
         <div id="topbar">
             <div className="topbar-container">
                 <div className="section-title">
-                    <h1>Portfolio</h1>
+                    <h1>DEV.</h1>
                 </div>
                 <div className="topbar_right">
                     <div className="social-links">
