@@ -1,15 +1,19 @@
 @import 'config.scss';
 
 #portfolio {
-    margin-top: 80px;
+    // margin-top: 80px;
     padding: 0px 6vw;
 
     .grid-container {
         display: grid;
         grid-template-columns: 60% 40%;
     }
+}
 
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    #portfolio {
+        padding: 0;
+        
         .grid-container {
             display: grid;
             grid-template-columns: 100%;
@@ -130,8 +134,9 @@
 
     .skills-container {
         display: flex;
-        margin: 20px 0 22px 27px;
+        margin: 10px;
         flex-wrap: wrap;
+        justify-content: space-evenly;
 
         .card {
             width: 70px;

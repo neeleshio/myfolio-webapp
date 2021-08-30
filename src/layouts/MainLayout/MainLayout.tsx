@@ -5,9 +5,8 @@ import { Sidebar, Topbar } from './Components'
 const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
     return (
         <div id="mainLayout">
-            {/* <Sidebar /> */}
+            <Topbar />
             <main>
-                <Topbar />
                 {children}
             </main>
         </div>
