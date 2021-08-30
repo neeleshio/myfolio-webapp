@@ -14,8 +14,11 @@ a {
     color: inherit;
 }
 
-main {
+body {
     background-color: $primary-alicewhite-bg;
+}
+
+main {
     border-radius: 5px 0 0 5px;
     // width: 92vw;
 }
