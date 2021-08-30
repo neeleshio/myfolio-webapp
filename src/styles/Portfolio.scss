@@ -2,35 +2,44 @@
 
 #portfolio {
     margin-top: 80px;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 6vw;
 
     .grid-container {
         display: grid;
         grid-template-columns: 60% 40%;
     }
+
+    @media screen and (max-width: 1024px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
 }
 
 #hero {
     .hero-container {
-        max-width: 1200px;
-        max-height: 125px;
-        min-height: 125px;
+        // max-width: 1200px;
+        // max-height: 125px;
+        // min-height: 125px;
         background-color: $secondary-white-bg;
         margin: 0 22px;
         border-radius: 20px;
         display: flex;
         align-items: center;
+        justify-content: space-around;
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
     }
 
     .intro {
-        margin-left: 35px;
+        // margin-left: 35px;
 
         h2 {
             font-size: 23px;
             font-weight: 600;
             color: $secondary-navyblue-color;
-            margin-bottom: 6px;
+            // margin-bottom: 6px;
         }
     
         h3 {
@@ -41,13 +50,13 @@
     }
 
     .coder-img {
-        padding-bottom: 8px;
-        margin-left: 84px;
+        margin-top: -18px;
+        // margin-left: 64px;
     }
 
     .expirience {
-        margin-left: 41px;
-        padding-top: 10px;
+        // margin-left: 65px;
+        padding-top: 8px;
 
         h4 {
             font-size: 12px;
@@ -70,6 +79,7 @@
                     font-size: 30px;
                     font-weight: 500;
                     color: #767D9F;
+                    padding: 0 3px;
                 }
             }
         }
@@ -124,18 +134,18 @@
         flex-wrap: wrap;
 
         .card {
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             background-color: $secondary-white-bg;
             border-radius: 8px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
-            font-size: 8.5px;
+            font-size: 9.5px;
             font-weight: 600;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            margin-right: 14px;
+            // margin-right: 14px;
             margin-bottom: 14px;
 
             img {
@@ -144,7 +154,7 @@
             }
 
             p {
-                margin-top: 5px;
+                margin-top: 7px;
                 text-align: center;
             }
         }

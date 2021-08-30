@@ -18,6 +18,13 @@ function Hero() {
                         <h3>2<span>M</span></h3>
                     </div>
                 </div>
+                <div className="expirience">
+                    <h4>Total Expirience</h4>
+                    <div className="expirience_numbers">
+                        <h3>1<span>Y</span></h3>
+                        <h3>2<span>M</span></h3>
+                    </div>
+                </div>
             </div>
         </div>
     )

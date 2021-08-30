@@ -53,7 +53,8 @@
     #topbar {
         position: fixed;
         width: 100%;
-        padding: 16px 0 8px 0;
+        // padding: 16px 0 8px 0;
+        padding: 16px 6vw;
         // margin: 0 22px;
         // margin: 25px 34px 25px 34px;
         // background-color: aqua;
@@ -68,7 +69,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                margin-right: 120px;
+                padding-right: 10px;
 
                 .social-links {
                     height: 20px;
@@ -108,7 +109,7 @@
         }
 
         .section-title {
-            padding-left: 130px;
+            padding-left: 27px;
 
             h1 {
                 font-size: 20px;

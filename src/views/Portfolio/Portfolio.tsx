@@ -11,7 +11,6 @@ function Portfolio() {
                     <LangsAndTools />
 
                     <WorkHistory />
-                    <WorkHistory />
                 </div>
                 <div className="grid-item">
                     <Accomplishments />
