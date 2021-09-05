@@ -187,17 +187,18 @@
     .card-container {
         display: flex;
         margin: 20px 0 22px 27px;
+        overflow-x: auto;
 
         .card {
-            width: 158px;
-            height: 211px;
+            min-width: 158px;
+            min-height: 211px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             margin-right: 14px;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+            // box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 
             h3 {
                 font-size: 12px;
