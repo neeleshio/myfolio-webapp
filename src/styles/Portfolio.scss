@@ -168,6 +168,28 @@
 
 
 #workHistory {
+    ::-webkit-scrollbar-track
+    {
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        // box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F1F1F1;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        height: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        // box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: rgb(193, 193, 193);
+    }
+
     margin-top: 26px;
     
     .container {
@@ -188,10 +210,11 @@
         display: flex;
         margin: 20px 0 22px 27px;
         overflow-x: auto;
+        padding-bottom: 10px;
 
         .card {
-            min-width: 158px;
-            min-height: 211px;
+            min-width: 178px;
+            min-height: 231px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
