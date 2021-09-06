@@ -211,14 +211,14 @@
 
     .card-container {
         display: flex;
-        margin: 20px 0 22px 22px;
+        margin: 20px 22px 22px 22px;
         overflow-x: auto;
         padding-bottom: 10px;
 
         .card {
-            min-width: 188px;
-            min-height: 221px;
-            padding: 16px 25px;
+            min-width: 158px;
+            min-height: 211px;
+            padding: 15px 19px;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
