@@ -35,6 +35,14 @@ export const languages = [
         title: "Material UI",
         icon: "./images/mui.svg",
     },
+    {
+        title: "Material UI",
+        icon: "./images/mui.svg",
+    },
+    {
+        title: "Material UI",
+        icon: "./images/mui.svg",
+    },
 
 
 ]

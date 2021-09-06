@@ -7,6 +7,7 @@
     .grid-container {
         display: grid;
         grid-template-columns: 60% 40%;
+        margin: 0 4px;
     }
 }
 
@@ -134,9 +135,11 @@
 
     .skills-container {
         display: flex;
-        margin: 10px;
+        margin: 20px 22px 0 22px;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        
+        gap: 15px;
 
         .card {
             width: 70px;
@@ -151,7 +154,7 @@
             flex-direction: column;
             justify-content: center;
             // margin-right: 14px;
-            margin-bottom: 14px;
+            // margin-bottom: 14px;
 
             img {
                 border-radius: 2px;
@@ -201,20 +204,20 @@
     }
 
     $colors: (
-        card1: #EEFCEF,
-        card2: #E5F5FA,
-        card3: #FAF8F3,
+        card1: #ddf3fa,
+        card2: #e4fae6,
+        card3: #faf3e2,
     );
 
     .card-container {
         display: flex;
-        margin: 20px 0 22px 27px;
+        margin: 20px 0 22px 22px;
         overflow-x: auto;
         padding-bottom: 10px;
 
         .card {
-            min-width: 178px;
-            min-height: 231px;
+            min-width: 158px;
+            min-height: 211px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
