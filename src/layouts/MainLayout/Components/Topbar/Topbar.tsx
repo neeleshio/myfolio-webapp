@@ -11,7 +11,7 @@ function Topbar() {
                     <h1>DEV.</h1>
                 </div>
                 <div className="topbar_right">
-                    <div className="social-links">
+                    {/* <div className="social-links">
                         <ul>
                             {Object.values(links).map((el, index) => (
                                 <li key={index}>
@@ -21,7 +21,7 @@ function Topbar() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="extra-buttons">
                         <button>
                             <IoMoonSharp />

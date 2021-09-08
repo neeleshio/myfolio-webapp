@@ -16,5 +16,5 @@ export const companies = [
         designation: "Backend Intern",
         timeline: "Feb 2020 - Apr 2020",
         logo: "./images/lh.svg"
-    },
+    }
 ]

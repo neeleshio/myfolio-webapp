@@ -1,8 +1,7 @@
 @import 'config.scss';
 
 #portfolio {
-    // margin-top: 80px;
-    padding: 0px 6vw;
+    padding: 25px 6vw;
 
     .grid-container {
         display: grid;
@@ -13,7 +12,7 @@
 
 @media screen and (max-width: 1024px) {
     #portfolio {
-        padding: 0;
+        padding: 20px 0;
         
         .grid-container {
             display: grid;
@@ -24,10 +23,7 @@
 
 #hero {
     .hero-container {
-        // max-width: 1200px;
-        // max-height: 125px;
-        // min-height: 125px;
-        background-color: $secondary-white-bg;
+        background-color: $white-bg;
         margin: 0 22px;
         border-radius: 20px;
         display: flex;
@@ -38,25 +34,30 @@
     }
 
     .intro {
-        // margin-left: 35px;
 
         h2 {
             font-size: 23px;
             font-weight: 600;
-            color: $secondary-navyblue-color;
-            // margin-bottom: 6px;
+            color: $navy-blue-text;
+            padding-bottom: 1px;
         }
     
         h3 {
             font-size: 16px;
             font-weight: 500;
-            color: $secondary-navyblue-color;
+            color: $navy-blue-text;
         }
     }
 
-    .coder-img {
-        margin-top: -18px;
-        // margin-left: 64px;
+    img {
+        margin-top: -10px;
+        height: 140px;
+    }
+
+    @media screen and (max-width: 490px) {
+        .coder-img {
+            display: none;
+        }
     }
 
     .expirience {
@@ -65,26 +66,77 @@
 
         h4 {
             font-size: 12px;
-            color: $secondary-navyblue-color;
-            font-weight: 500;
-            position: relative;
-            top: 10px;
+            color: $navy-blue-text;
+            font-weight: 600;
+            // position: relative;
+            // top: 10px;
         }
 
         .expirience_numbers {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                display: flex;
+            }
 
             h3 {
                 font-size: 50px;
                 font-weight: 500;
-                color: $secondary-navyblue-color;
+                color: $navy-blue-text;
                 padding: 0 5px;
+                line-height: 50px;
     
                 span {
                     font-size: 30px;
                     font-weight: 500;
                     color: #767D9F;
                     padding: 0 3px;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        padding-top: 8px;
+
+        h4 {
+            font-size: 12px;
+            color: $navy-blue-text;
+            font-weight: 600;
+            // padding-bottom: 5px;
+        }
+
+        .social-container {
+            display: flex;
+            margin-top: 5px;
+
+            .card {
+                width: 40px;
+                height: 40px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+                font-size: 9.5px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 6px;
+                margin-bottom: 14px;
+    
+                img {
+                    border-radius: 2px;
+                    margin-top: 2px;
+                    width: 20px;
+                    height: 20px;
+                }
+    
+                p {
+                    margin-top: 7px;
+                    text-align: center;
                 }
             }
         }
@@ -102,11 +154,11 @@
         h2 {
             font-size: 12px;
             font-weight: 600;
-            margin-left: 5px;
+            margin-left: 13px;
         }
 
         .filter {
-            background-color: $secondary-navyblue-color;
+            background-color: $navy-blue-bg;
             width: 84px;
             height: 22px;
             display: flex;
@@ -118,15 +170,15 @@
             button {
                 font-size: 9px;
                 background-color: unset;
-                color: $secondary-white-bg;
+                color: $white-text;
                 width: 40px;
                 height: 16px;
                 border-radius: 50px;
                 font-weight: 500;
 
                 &.active {
-                    background-color: $secondary-white-bg;
-                    color: $secondary-navyblue-color;
+                    background-color: $white-bg;
+                    color: $navy-blue-text;
                 }
             }
 
@@ -144,7 +196,7 @@
         .card {
             width: 70px;
             height: 70px;
-            background-color: $secondary-white-bg;
+            background-color: $white-bg;
             border-radius: 8px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
             font-size: 9.5px;
@@ -171,28 +223,6 @@
 
 
 #workHistory {
-    ::-webkit-scrollbar-track
-    {
-        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        // box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        border-radius: 10px;
-        background-color: #F1F1F1;
-    }
-    
-    ::-webkit-scrollbar
-    {
-        height: 5px;
-        background-color: #F5F5F5;
-    }
-    
-    ::-webkit-scrollbar-thumb
-    {
-        border-radius: 10px;
-        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        // box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color: rgb(193, 193, 193);
-    }
-
     margin: 40px 0 0 22px;
     
     .container {
@@ -212,19 +242,20 @@
     .card-container {
         display: flex;
         margin: 20px 22px 22px 0;
-        overflow-x: auto;
+        // overflow-x: auto;
         // padding-bottom: 10px;
         border-radius: 15px;
+        justify-content: space-between;
 
         .card {
-            min-width: 158px;
+            // min-width: 158px;
             min-height: 211px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-right: 20px;
+            // margin-right: 20px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 
             h3 {
@@ -243,34 +274,33 @@
                 background-color: #{$color};
             }
         }
+
+        .card4 {
+            margin-right: 0;
+        }
     }
+
+    @media screen and (max-width: 490px) {
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .card {
+                min-height: 120px;
+                max-height: 200px;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
 }
 
 #accomplishments {
-    
-    ::-webkit-scrollbar-track
-    {
-        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        // box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        border-radius: 10px;
-        background-color: #F1F1F1;
-    }
-    
-    ::-webkit-scrollbar
-    {
-        width: 5px;
-        background-color: #F5F5F5;
-    }
-    
-    ::-webkit-scrollbar-thumb
-    {
-        border-radius: 10px;
-        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        // box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-        background-color: rgb(193, 193, 193);
-    }
-    
-    margin: 45px 22px 0 0;
+    margin: 45px 22px 0 22px;
 
     .container {
         h2 {
@@ -281,26 +311,35 @@
 
     .card-container {
         margin-top: 20px;
-        height: 350px;
+        height: 455px;
         overflow-y: auto;
         border-radius: 10px;
-        padding: 0 10px 10px 0;
+        padding: 0 10px 0 0;
 
         .card {
             width: 318px;
-            height: 62px;
-            background-color: $secondary-white-bg;
+            min-height: 70px;
+            background-color: $white-bg;
             margin-bottom: 14px;
             // box-shadow: 0px 0px 50px rgba(107, 105, 105, 0.1);
+            border-radius: 10px;
 
             &:nth-child(odd) {
                 float: left;
-                border-radius: 10px 10px 10px 0;
+                // border-radius: 10px 10px 10px 0;
+                -webkit-box-shadow: 10px 10px 2px -8px #E4FAE6; 
+                box-shadow: 10px 10px 2px -8px #E4FAE6;
             }
 
             &:nth-child(even) {
                 float: right;
-                border-radius: 10px 10px 0 10px;
+                // border-radius: 10px 10px 0 10px;
+                -webkit-box-shadow: -10px 10px 0px -8px #FAF3E2; 
+                box-shadow: -10px 10px 2px -8px #FAF3E2;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
             }
         }
 

@@ -2,7 +2,7 @@
 
 #mainLayout {
     // display: flex;
-    // background-color: $layout-navyblue-bg;
+    // background-color: $navy-blue;
 
     #sidebar {
         width: 150px;
@@ -20,8 +20,8 @@
 
                 li {
                     margin-bottom: 10px;
-                    background-color: $layout-navyblue-bg;
-                    color: $primary-alicewhite-bg;
+                    background-color: $navy-blue-bg;
+                    color: $alice-white-text;
                     width: 140px;
                     height: 40px;
                     padding: 10px 0 0 30px;
@@ -31,7 +31,7 @@
                     
                     &.active {
                         background-color: #010422;
-                        color: $secondary-white-bg;
+                        color: $white-text;
                     }
                 }
 
@@ -53,6 +53,7 @@
     #topbar {
         position: fixed;
         width: 100%;
+        border-bottom: 1px solid #e7e7e794;
         // padding: 16px 0 8px 0;
         // padding: 16px 6vw;
         // margin: 0 22px;
@@ -66,13 +67,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 5px 6vw;
+            margin: 0 22px;
 
             .topbar_right {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                padding-right: 10px;
+                // padding-right: 10px;
 
                 .social-links {
                     height: 20px;
@@ -98,7 +101,7 @@
                     height: 20px;
 
                     button {
-                        margin: 0 15px;
+                        // margin: 0 15px;
                     }
 
                     button, svg {
@@ -111,8 +114,15 @@
             }
         }
 
+        @media screen and (max-width: 1024px) {
+            .topbar-container {
+                padding: 5px 0;
+                margin: 0 22px;
+            }
+        }
+
         .section-title {
-            padding-left: 27px;
+            // padding-left: 27px;
 
             h1 {
                 font-size: 20px;

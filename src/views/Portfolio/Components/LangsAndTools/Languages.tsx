@@ -28,6 +28,10 @@ export const languages = [
         icon: "./images/testing.svg",
     },
     {
+        title: "NodeJS",
+        icon: "./images/node.svg",
+    },
+    {
         title: "RESTFul API",
         icon: "./images/restful.svg",
     },
