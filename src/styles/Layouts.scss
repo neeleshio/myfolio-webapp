@@ -134,8 +134,8 @@
             border-bottom: 1px solid #e7e7e794;
             font-size: 13px;
             color: #000000;
-            font-weight: 500;
-            // backdrop-filter: blur(20px);
+            background-color: rgba(255,255,255,0.62);
+            backdrop-filter: saturate(600%) blur(20px);
             padding: 3px 0;
 
             ul {
