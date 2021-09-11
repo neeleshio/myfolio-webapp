@@ -33,6 +33,12 @@
         flex-wrap: wrap;
     }
 
+    @media screen and (max-width: 535px) {
+        .hero-container {
+            padding: 25px 0 10px 0;
+        }
+    }
+
     .intro {
         h2 {
             font-size: 23px;
