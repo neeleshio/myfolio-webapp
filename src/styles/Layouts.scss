@@ -50,8 +50,8 @@
         position: fixed;
         width: 100%;
         border-bottom: 1px solid #e7e7e794;
-        background: inherit;
-        backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.62) !important;
+        backdrop-filter: saturate(600%) blur(20px);
 
         .topbar-container {
             display: flex;
@@ -131,10 +131,9 @@
         }
 
         .topbar-mini {
-            background-color: #eeeff1b9;
             border-bottom: 1px solid #e7e7e794;
             font-size: 13px;
-            backdrop-filter: blur(20px);
+            // backdrop-filter: blur(20px);
             padding: 3px 0;
 
             ul {

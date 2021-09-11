@@ -34,7 +34,6 @@
     }
 
     .intro {
-
         h2 {
             font-size: 23px;
             font-weight: 600;
@@ -55,7 +54,7 @@
     }
 
     @media screen and (max-width: 490px) {
-        .coder-img {
+        .coder-img, .expirience {
             display: none;
         }
     }
