@@ -7,21 +7,21 @@ function Topbar() {
     return (
         <div id="topbar">
             <div className="topbar-container">
-                <div className="section-title">
+                <div className="logo">
                     <h1>DEV.</h1>
                 </div>
                 <div className="topbar_right">
-                    {/* <div className="social-links">
+                    <div className="nav-links">
                         <ul>
                             {Object.values(links).map((el, index) => (
                                 <li key={index}>
-                                    <a href={el.url}>
-                                        {el.icon}
+                                    <a href={el.path}>
+                                        {el.name}
                                     </a>
                                 </li>
                             ))}
                         </ul>
-                    </div> */}
+                    </div>
                     <div className="extra-buttons">
                         <button>
                             <IoMoonSharp />
@@ -31,6 +31,17 @@ function Topbar() {
                         </button>
                     </div>
                 </div>
+            </div>
+            <div className="topbar-mini">
+                <ul>
+                    {Object.values(links).map((el, index) => (
+                        <li key={index}>
+                            <a href={el.path}>
+                                {el.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     )

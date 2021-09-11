@@ -9,7 +9,7 @@ function LangsAndTools() {
             <div className="techsAndTools-container">
                 <div className="heading-container">
                     <h2>Languages & Tools</h2>
-                    <div className="filter">
+                    {/* <div className="filter">
                         <button
                             className={activeButton === "Main" ? "active" : "filter-btn"}
                             onClick={e => setActiveButton("Main")}
@@ -22,7 +22,7 @@ function LangsAndTools() {
                         >
                             Others
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="skills-container">
                     {Object.values(languages).map((el, index) => (

@@ -1,9 +1,6 @@
 @import 'config.scss';
 
 #mainLayout {
-    // display: flex;
-    // background-color: $navy-blue;
-
     #sidebar {
         width: 150px;
         position: fixed;
@@ -26,7 +23,6 @@
                     height: 40px;
                     padding: 10px 0 0 30px;
                     border-radius: 2px;
-                    // text-align: center;
 
                     
                     &.active {
@@ -54,12 +50,6 @@
         position: fixed;
         width: 100%;
         border-bottom: 1px solid #e7e7e794;
-        // padding: 16px 0 8px 0;
-        // padding: 16px 6vw;
-        // margin: 0 22px;
-        // margin: 25px 34px 25px 34px;
-        // background-color: aqua;
-
         background: inherit;
         backdrop-filter: blur(10px);
 
@@ -70,19 +60,27 @@
             padding: 5px 6vw;
             margin: 0 22px;
 
+            .logo {
+                h1 {
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+            }
+
             .topbar_right {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
-                // padding-right: 10px;
 
-                .social-links {
-                    height: 20px;
+                .nav-links {
                     min-width: 250px;
+                    padding-right: 50px;
+                    font-size: 14px;
 
                     ul {
                         display: flex;
+                        flex-wrap: wrap;
 
                         li {
                             margin: 0 15px;
@@ -97,12 +95,16 @@
                     }
                 }
 
-                .extra-buttons {
-                    height: 20px;
-
-                    button {
-                        // margin: 0 15px;
+                @media screen and (max-width: 535px) {
+                    .nav-links {
+                        display: none;
                     }
+                }
+
+                .extra-buttons {
+                    width: 70px;
+                    display: flex;
+                    justify-content: space-between;
 
                     button, svg {
                         width: 20px;
@@ -114,6 +116,13 @@
             }
         }
 
+        @media screen and (max-width: 535px) {
+            .topbar-container {
+                border-bottom: 1px solid #e7e7e794;
+
+            }
+        }
+
         @media screen and (max-width: 1024px) {
             .topbar-container {
                 padding: 5px 0;
@@ -121,12 +130,21 @@
             }
         }
 
-        .section-title {
-            // padding-left: 27px;
+        .topbar-mini {
+            border-bottom: 1px solid #e7e7e794;
+            font-size: 13px;
+            backdrop-filter: blur(20px);
+            padding: 3px 0;
 
-            h1 {
-                font-size: 20px;
-                font-weight: 800;
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+
+        @media screen and (min-width: 535px) {
+            .topbar-mini {
+                display: none;
             }
         }
     }

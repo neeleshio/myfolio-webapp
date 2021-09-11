@@ -3,24 +3,20 @@ import { IoLogoYoutube } from "react-icons/io5";
 
 export const links = [
     {
-        name: 'LinkedIn',
-        url: 'https://linkedin.com/in/neeleshio',
-        icon: <FaLinkedin />
+        name: 'Home',
+        path: '/'
     },
     {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/channel/UCbMc_AEj_X9tKKctO0viCGw',
-        icon: <IoLogoYoutube />
+        name: 'Apps',
+        path: '/apps'
     },
     {
-        name: 'Github',
-        url: 'https://github.com/neeleshio',
-        icon: <FaGithubSquare />
+        name: 'Journal',
+        path: '/journal'
     },
     {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/neeleshio',
-        icon: <FaInstagram />
+        name: 'DSA',
+        path: '/dsa'
     },
 
 ]
