@@ -7,7 +7,7 @@ function Hero() {
             <div className="hero-container">
                 <div className="intro">
                     <h2>Helloo👋 &nbsp;I Am Neelesh</h2>
-                    <h3>A Frontend Development Engineer</h3>
+                    <h3>I'm a Frontend Development Engineer</h3>
                 </div>
                 {/* <div className="coder-img"> */}
                 <img className="coder-img" src="./images/coder2.svg" alt="coder" />

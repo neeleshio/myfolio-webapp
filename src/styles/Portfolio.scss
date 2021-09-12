@@ -54,6 +54,24 @@
         }
     }
 
+    @media screen and (max-width: 490px) {
+        .hero-container {
+            border-radius: 12px;
+        }
+        
+        .intro {
+            text-align: center;
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+
     img {
         margin-top: -10px;
         height: 140px;
@@ -255,6 +273,8 @@
         .card {
             // min-width: 158px;
             min-height: 211px;
+            width: 100%;
+            max-width: 200px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
@@ -272,16 +292,16 @@
                 font-size: 10px;
                 font-weight: 500;
             }
+
+            &:nth-child(2) {
+                margin: 0 20px;
+            }
         }
 
         @each $name, $color in $colors {
             .#{$name} {
                 background-color: #{$color};
             }
-        }
-
-        .card4 {
-            margin-right: 0;
         }
     }
 
@@ -298,6 +318,11 @@
                 justify-content: space-between;
                 margin-right: 0;
                 margin-bottom: 20px;
+                max-width: 1000px;
+                
+                &:nth-child(2) {
+                    margin: 0 0 20px 0;
+                }
             }
         }
     }
