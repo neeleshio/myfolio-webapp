@@ -5,7 +5,7 @@
 
     .grid-container {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 55% 45%;
         margin: 0 4px;
     }
 }
@@ -42,14 +42,14 @@
     .intro {
         h2 {
             font-size: 23px;
-            font-weight: 600;
+            font-weight: 500;
             color: $navy-blue-text;
             padding-bottom: 1px;
         }
     
         h3 {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 400;
             color: $navy-blue-text;
         }
     }
@@ -63,11 +63,11 @@
             text-align: center;
 
             h2 {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             h3 {
-                font-size: 15px;
+                font-size: 14px;
             }
         }
     }
@@ -106,7 +106,7 @@
 
             h3 {
                 font-size: 50px;
-                font-weight: 500;
+                font-weight: 400;
                 color: $navy-blue-text;
                 padding: 0 5px;
                 line-height: 50px;
@@ -340,8 +340,8 @@
     }
 
     .card-container {
-        margin-top: 20px;
-        height: 455px;
+        margin-top: 15px;
+        height: 445px;
         overflow-y: auto;
         border-radius: 10px;
         padding: 0 10px 0 0;

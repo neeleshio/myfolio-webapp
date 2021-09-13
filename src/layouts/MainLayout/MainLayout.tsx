@@ -7,6 +7,7 @@ const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
         <div id="mainLayout">
             <Topbar />
             <main>
+                <div className="navbar-bg"></div>
                 {children}
             </main>
         </div>

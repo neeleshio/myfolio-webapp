@@ -19,7 +19,24 @@ body {
 }
 
 main {
-    padding-top: 40px;
+    .navbar-bg {
+        min-height: 50px;
+        background-color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .navbar-bg {
+            min-height: 40px;
+        }
+    }
+
+    @media screen and (max-width: 535px) {
+        .navbar-bg {
+            display: none;
+        }
+    }
+ 
+    // padding-top: 60px;
     border-radius: 5px 0 0 5px;
     // width: 92vw;
 }
