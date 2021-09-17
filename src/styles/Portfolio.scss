@@ -1,7 +1,7 @@
 @import 'config.scss';
 
 #portfolio {
-    padding: 25px 6vw;
+    padding: 30px 6vw;
 
     .grid-container {
         display: grid;
@@ -42,7 +42,7 @@
     .intro {
         h2 {
             font-size: 23px;
-            font-weight: 500;
+            font-weight: 600;
             color: $navy-blue-text;
             padding-bottom: 1px;
         }
@@ -271,7 +271,7 @@
         justify-content: space-between;
 
         .card {
-            // min-width: 158px;
+            min-width: 180px;
             min-height: 211px;
             width: 100%;
             max-width: 200px;
@@ -282,6 +282,7 @@
             justify-content: space-between;
             // margin-right: 20px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
 
             h3 {
                 font-size: 12px;

@@ -57,7 +57,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 6.2vw;
+            padding: 7.5px 6.2vw;
             margin: 0 22px;
 
             .logo {
@@ -74,13 +74,15 @@
                 justify-content: space-between;
 
                 .nav-links {
-                    min-width: 250px;
+                    min-width: 400px;
                     padding-right: 50px;
                     font-size: 13px;
 
                     ul {
                         display: flex;
                         flex-wrap: wrap;
+                        justify-content: space-evenly;
+
 
                         li {
                             margin: 0 15px;
