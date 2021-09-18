@@ -62,8 +62,9 @@
 
             .logo {
                 h1 {
-                    font-size: 20px;
-                    font-weight: 800;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
                 }
             }
 
@@ -86,6 +87,33 @@
 
                         li {
                             margin: 0 15px;
+
+                            a {
+                                position: relative;
+
+                                &:hover {
+                                    color: $navy-blue-text;
+                                    // transition: 0.3s;
+                                    font-weight: 600;
+                                }
+
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 0;
+                                    transform: translateX(-50%) scaleX(0);
+                                    transform-origin: 50% 50%;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: $navy-blue-bg;
+                                    transition: transform 150ms;
+                                }
+    
+                                &:hover:after {
+                                    transform: translateX(-50%) scaleX(1);
+                                }
+                            }
                         }
 
                         svg {
@@ -115,6 +143,7 @@
                         background-color: unset;
                     }
                 }
+
             }
         }
 

@@ -1,13 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { links } from './Social'
 
+const tagList = [
+    "I'm a Frontend Development Engineer",
+    "Other than Coding I like Stock market",
+    "Passionate but not obsessed"
+]
+
 function Hero() {
+    const [tag, setTag] = useState("I'm a Frontend Development Engineer")
+
+    let count = -1
+
+    useEffect(() => {
+        changeTag()
+    }, [])
+
+    const changeTag = () => {
+        // if (count < tagList.length) {
+        //     count = count + 1
+        //     setTag(tagList[count])
+        //     setTimeout(() => {
+        //         changeTag()
+        //     }, 3000)
+        // } else {
+        //     count = -1
+        //     setTimeout(() => {
+        //         changeTag()
+        //     }, 3000)
+        // }
+    }
+
     return (
         <div id="hero">
             <div className="hero-container">
                 <div className="intro">
                     <h2>Helloo👋 &nbsp;I Am Neelesh</h2>
-                    <h3>I'm a Frontend Development Engineer</h3>
+                    <h3>{tag}</h3>
                 </div>
                 {/* <div className="coder-img"> */}
                 <img className="coder-img" src="./images/coder2.svg" alt="coder" />

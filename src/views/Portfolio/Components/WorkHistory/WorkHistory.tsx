@@ -26,29 +26,33 @@ function WorkHistory() {
         <div id="workHistory">
             <div className="container">
                 <h2>Work History (Recent 3)</h2>
-                <div className="card-container front">
+                <div className="card-container">
                     {Object.values(companies).map((el, index: number) => (
-                        <>
-                            <CardFlip isFlipped={state?.[`card${index}`]} flipDirection="horizontal">
-                                <div key={index} className={`card card${index + 1}`} onClick={() => handleCardFlip(`card${index}`)}>
-
-                                    <h2>About Company</h2>
-                                    <h3>PiChain is a RegTech </h3>P
-                                    <h3>My Role</h3>
+                        <CardFlip isFlipped={state?.[`card${index}`]} flipDirection="horizontal">
+                            <div
+                                key={index}
+                                className={`card card${index + 1} card-back`}
+                                onClick={() => handleCardFlip(`card${index}`)}
+                            >
+                                <h2>My Role</h2>
+                                <p>{el.aboutRole}</p>
+                            </div>
+                            <div
+                                key={index}
+                                className={`card card${index + 1} card-front`}
+                                onClick={() => handleCardFlip(`card${index}`)}
+                            >
+                                <div className="details-container">
+                                    <h3>{el.designation.split(" ")[0]}</h3>
+                                    <h3>{el.designation.split(" ")[1]}</h3>
+                                    <h4>{el.timeline}</h4>
                                 </div>
-                                <div key={index} className={`card card${index + 1}`} onClick={() => handleCardFlip(`card${index}`)}>
-                                    <div className="details-container">
-                                        <h3>{el.designation.split(" ")[0]}</h3>
-                                        <h3>{el.designation.split(" ")[1]}</h3>
-                                        <h4>{el.timeline}</h4>
-                                    </div>
-                                    <div className="logo-container">
-                                        <img alt={el.name} src={el.logo} />
-                                        <h4>{el.name}</h4>
-                                    </div>
+                                <div className="logo-container">
+                                    <img alt={el.name} src={el.logo} />
+                                    <h4>{el.name}</h4>
                                 </div>
-                            </CardFlip>
-                        </>
+                            </div>
+                        </CardFlip>
                     ))}
                 </div>
             </div>
