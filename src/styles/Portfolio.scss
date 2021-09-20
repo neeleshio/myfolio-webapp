@@ -10,7 +10,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 980px) {
     #portfolio {
         padding: 20px 0;
         
@@ -77,9 +77,35 @@
         height: 140px;
     }
 
-    @media screen and (max-width: 490px) {
-        .coder-img, .expirience {
+    @media screen and (max-width: 1200px) {
+        .hero-container {
+            padding: 20px 0;
+        }
+
+        .coder-img {
             display: none;
+        }
+
+        .intro {
+            h2 {
+                font-size: 19px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .expirience {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 630px) {
+        .hero-container {
+            flex-direction: column;
+        }
+
+        .intro {
+            text-align: center;
         }
     }
 
@@ -273,10 +299,10 @@
         justify-content: space-between;
 
         .card {
-            min-width: 180px;
-            min-height: 211px;
             width: 100%;
+            min-width: 180px;
             max-width: 200px;
+            min-height: 211px;
             padding: 15px 19px;
             border-radius: 15px;
             display: flex;
@@ -285,13 +311,6 @@
             // margin-right: 20px;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
             cursor: pointer;
-
-            
-            // &:hover {
-            //     transform: scale(1.1);
-            //     transition: all 600ms ease-in-out;
-            //     cursor: pointer;
-            // }
 
             h3 {
                 font-size: 12px;
@@ -305,6 +324,13 @@
 
             &:nth-child(2) {
                 margin: 0 20px;
+            }
+        }
+
+        @media screen and (max-width: 1254px) {
+            .card {
+                min-width: 100px;
+                max-width: 180px;
             }
         }
 
@@ -323,10 +349,24 @@
             p {
                 font-size: 11px;
                 // padding-left: 4px;
-                font-weight: 600;
+                font-weight: 500;
                 padding-bottom: 7px;
             }
         }
+
+        @media screen and (max-width: 1254px) {
+            .card-back {
+                max-width: 133px;
+                min-width: 100px;
+            }
+        }
+
+        // @media screen and (max-width: 615px) {
+        //     .card-back {
+        //         max-width: 133px;
+        //         min-width: 100px;
+        //     }
+        // }
 
         @each $name, $color in $colors {
             .#{$name} {

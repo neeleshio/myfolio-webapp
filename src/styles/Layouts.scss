@@ -52,6 +52,7 @@
         // background-color: #FFFFFF;
         // border-bottom: 1px solid #00000094;
         backdrop-filter: blur(20px);
+        z-index: 2000;
 
         .topbar-container {
             display: flex;
