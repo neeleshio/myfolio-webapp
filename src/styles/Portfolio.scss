@@ -54,23 +54,7 @@
         }
     }
 
-    @media screen and (max-width: 490px) {
-        .hero-container {
-            border-radius: 12px;
-        }
-        
-        .intro {
-            text-align: center;
-
-            h2 {
-                font-size: 20px;
-            }
-
-            h3 {
-                font-size: 14px;
-            }
-        }
-    }
+    
 
     img {
         margin-top: -10px;
@@ -85,17 +69,13 @@
         .coder-img {
             display: none;
         }
+    }
 
+    @media screen and (max-width: 800px) {
         .intro {
             h2 {
                 font-size: 19px;
             }
-        }
-    }
-
-    @media screen and (max-width: 800px) {
-        .expirience {
-            display: none;
         }
     }
 
@@ -106,6 +86,28 @@
 
         .intro {
             text-align: center;
+
+            h2 {
+                font-size: 21px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        .hero-container {
+            border-radius: 12px;
+        }
+        
+        .intro {
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
         }
     }
 
@@ -144,6 +146,12 @@
                     padding: 0 3px;
                 }
             }
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .expirience {
+            display: none;
         }
     }
 
@@ -329,7 +337,21 @@
 
         @media screen and (max-width: 1254px) {
             .card {
-                min-width: 100px;
+                min-width: 140px;
+                max-width: 180px;
+            }
+        }
+
+        @media screen and (max-width: 980px) {
+            .card {
+                min-width: 180px;
+                max-width: 200px;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .card {
+                min-width: 145px;
                 max-width: 180px;
             }
         }
@@ -375,6 +397,8 @@
         }
     }
 
+ 
+
     @media screen and (max-width: 490px) {
         .card-container {
             display: flex;
@@ -419,7 +443,7 @@
         height: 445px;
         overflow-y: auto;
         border-radius: 10px;
-        padding: 0 10px 0 0;
+        // padding: 0 10px 0 0;
 
         .card {
             width: 318px;
