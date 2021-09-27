@@ -63,7 +63,7 @@
 
     @media screen and (max-width: 1200px) {
         .hero-container {
-            padding: 100px 0;
+            padding: 70px 0;
         }
 
         .coder-img {
@@ -82,7 +82,7 @@
     @media screen and (max-width: 630px) {
         .hero-container {
             flex-direction: column;
-            margin: 20px 10px 0 10px;
+            margin: 10px 10px 0 10px;
         }
 
         .intro {
@@ -284,6 +284,7 @@
 @media screen and (max-width: 630px) {
     #langsAndTools {
         margin-left: 0;
+        margin-top: 25px;
 
         .skills-container {
             margin-right: 0;
@@ -442,6 +443,7 @@
 @media screen and (max-width: 630px) {
     #workHistory {
         margin-left: 10px;
+        margin-top: 15px;
 
         .card-container {
             margin-right: 10px;
