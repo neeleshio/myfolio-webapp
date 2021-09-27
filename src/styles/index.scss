@@ -32,7 +32,7 @@ main {
 
     @media screen and (max-width: 535px) {
         .navbar-bg {
-            display: none;
+            // display: none;
         }
     }
  
@@ -43,7 +43,7 @@ main {
 
 @media screen and (max-width: 535px) {
     main {
-        padding-top: 70px;
+        padding-top: 20px;
     }
 }
 
