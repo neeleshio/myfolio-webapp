@@ -82,6 +82,7 @@
     @media screen and (max-width: 630px) {
         .hero-container {
             flex-direction: column;
+            margin: 0 10px;
         }
 
         .intro {
@@ -280,6 +281,16 @@
     }
 }
 
+@media screen and (max-width: 630px) {
+    #langsAndTools {
+        margin-left: 0;
+
+        .skills-container {
+            margin-right: 0;
+        }
+    }
+}
+
 
 #workHistory {
     margin: 24px 0 0 22px;
@@ -426,6 +437,16 @@
         }
     }
 
+}
+
+@media screen and (max-width: 630px) {
+    #workHistory {
+        margin-left: 10px;
+
+        .card-container {
+            margin-right: 10px;
+        }
+    }
 }
 
 #accomplishments {
