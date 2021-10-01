@@ -49,7 +49,7 @@
     
         h3 {
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 500;
             color: $navy-blue-text;
         }
     }
@@ -63,7 +63,7 @@
 
     @media screen and (max-width: 1200px) {
         .hero-container {
-            padding: 70px 0;
+            padding: 40px 0;
         }
 
         .coder-img {
@@ -103,11 +103,11 @@
             text-align: center;
 
             h2 {
-                font-size: 19px;
+                font-size: 21px;
             }
 
             h3 {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }
@@ -157,7 +157,7 @@
     }
 
     .social-links {
-        padding-top: 8px;
+        padding-top: 18px;
 
         h4 {
             font-size: 12px;
@@ -284,7 +284,7 @@
 @media screen and (max-width: 630px) {
     #langsAndTools {
         margin-left: 0;
-        margin-top: 25px;
+        margin-top: 35px;
 
         .skills-container {
             margin-right: 0;
@@ -443,10 +443,11 @@
 @media screen and (max-width: 630px) {
     #workHistory {
         margin-left: 10px;
-        margin-top: 15px;
+        margin-top: 25px;
 
         .card-container {
             margin-right: 10px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -458,6 +459,7 @@
         h2 {
             font-size: 12px;
             font-weight: 600;
+            margin-left: 5px;
         }
     }
 
@@ -495,5 +497,15 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #accomplishments {
+        margin: 0px 10px 0 10px;
+
+        .card-container {
+            margin-top: 20px;
+        }
     }
 }
