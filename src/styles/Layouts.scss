@@ -25,7 +25,7 @@
                     border-radius: 2px;
 
                     
-                    &.active {
+                    .is-active {
                         background-color: #010422;
                         color: $white-text;
                     }
@@ -58,15 +58,45 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 7.5px 6.2vw;
+            padding: 12px 6.2vw;
             margin: 0 22px;
 
+            $colors: (
+                btn-1: #FA6058,
+                btn-2: #FCBD2E,
+                btn-3: #30CA41,
+            );
+
             .logo {
+                display: flex;
+                // align-items: center;
+
                 h1 {
                     font-size: 18px;
                     font-weight: 600;
                     text-transform: uppercase;
                 }
+
+               
+
+                button {
+                    // background-color: #000000;
+                    padding: 8px;
+                    margin-right: 8px;
+                    border-radius: 50px;
+                    // text-align: center;
+                    cursor: pointer;
+                }
+
+                @each $name, $color in $colors {
+                    .#{$name} {
+                        background-color: #{$color};
+                    }
+                }
+
+               
+
+                
             }
 
             .topbar_right {
@@ -92,6 +122,8 @@
                             a {
                                 position: relative;
 
+                               
+
                                 &:hover {
                                     color: $navy-blue-text;
                                     // transition: 0.3s;
@@ -112,6 +144,15 @@
                                 }
     
                                 &:hover:after {
+                                    transform: translateX(-50%) scaleX(1);
+                                }
+                            }
+
+                            .is-active {
+                                color: $navy-blue-text;
+                                font-weight: 600;
+
+                                &:after {
                                     transform: translateX(-50%) scaleX(1);
                                 }
                             }
@@ -157,7 +198,7 @@
 
         @media screen and (max-width: 1024px) {
             .topbar-container {
-                padding: 5px 0;
+                padding: 8px 0;
                 margin: 0 22px;
             }
         }

@@ -2,22 +2,25 @@ import React from 'react'
 import { links } from './Links'
 import { IoMoonSharp } from "react-icons/io5";
 import { IoMdNotificationsOutline, IoIosMoon } from "react-icons/io";
+import { NavLink } from 'react-router-dom';
 
 function Topbar() {
     return (
         <div id="topbar">
             <div className="topbar-container">
                 <div className="logo">
-                    <h1>DEV 👨‍💻</h1>
+                    <button className="btn-1"></button>
+                    <button className="btn-2"></button>
+                    <button className="btn-3"></button>
                 </div>
                 <div className="topbar_right">
                     <div className="nav-links">
                         <ul>
                             {Object.values(links).map((el, index) => (
                                 <li key={index}>
-                                    <a href={el.path}>
+                                    <NavLink activeClassName='is-active' exact to={el.path}>
                                         {el.name}
-                                    </a>
+                                    </NavLink>
                                 </li>
                             ))}
                         </ul>

@@ -1,12 +1,12 @@
 import React from 'react'
-import { Switch } from 'react-router-dom'
+import { Switch, BrowserRouter } from 'react-router-dom'
 import { PublicRoute } from './utils'
 import { MainLayout } from './layouts'
 import { Portfolio, Journal } from './views'
 
 function Routes() {
     return (
-        <Switch>
+        <BrowserRouter>
             <PublicRoute
                 path="/"
                 layout={MainLayout}
@@ -19,7 +19,7 @@ function Routes() {
                 component={Journal}
                 exact
             />
-        </Switch>
+        </BrowserRouter>
     )
 }
 
