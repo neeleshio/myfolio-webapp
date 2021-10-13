@@ -20,7 +20,7 @@ function Routes() {
                 exact
             />
             <PublicRoute
-                path="/journal/:id/:topic/:title"
+                path="/journal/:topic/:title/:id"
                 layout={MainLayout}
                 component={ViewArticle}
                 exact
