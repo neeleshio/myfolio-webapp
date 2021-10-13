@@ -37,7 +37,7 @@
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         background-color: #FFFFFF;
-        margin: 0 22px;
+        margin: 0 22px 20px 22px;
         cursor: pointer;
 
         &--left {
@@ -48,17 +48,20 @@
                 h3 { 
                     font-size: 13px;
                     font-weight: 500;
+                    margin-left: 10px;
                 }
 
                 img {
-                    height: 30px;
+                    height: 20px;
                 }
             }
 
             .headline_container {
+                margin: 10px 0 8px 0;
+
                 h1 {
                     font-size: 18px;
-                    // font-weight: 600;            
+                    margin-bottom: 3px;         
                 }
 
                 h3 {
@@ -70,17 +73,19 @@
 
             .meta_info {
                 display: flex;
+                align-items: center;
 
                 h4 {
                     font-size: 11px;
                     font-weight: 400;
                     color: $silver-text;
+                    margin-right: 5px;
                 }
 
                 .keyword {
                     background-color: $silver-bg;
                     border-radius: 10px;
-                    padding: 1px 7px;
+                    padding: 2px 9px;
                 }
             }
         }
@@ -106,6 +111,14 @@
         .article_card {
             flex-direction: column-reverse;
 
+            .topic_container {
+                margin: 8px 0 0 0;
+            }
+
+            .headline_container {
+                margin-top: 5px;
+            }
+
             &--right {
                 img {
                     margin-left: 0;
@@ -117,24 +130,42 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    #articleCard {
+        // position: relative;
+        // top: 50px;
+    }
+}
+
 #sideFilterbar {
     margin: 22px;
 
-    h3 {
-        font-size: 13px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        padding-left: 2px;
-    }
+    div {
+        position: sticky;
+        top: 100px;
 
-    button {
-        padding: 6px 20px;
-        background-color: $white-bg;
-        border: 1px solid $silver-bg;
-        color: $silver-text;
-        font-size: 11px;
-        border-radius: 3px;
-        margin: 0 15px 15px 0;
-        cursor: pointer;
+        h3 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-left: 2px;
+        }
+    
+        button {
+            padding: 6px 20px;
+            background-color: $white-bg;
+            border: 1px solid $silver-bg;
+            color: $silver-text;
+            font-size: 11px;
+            border-radius: 3px;
+            margin: 0 15px 10px 0;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #sideFilterbar {
+        margin-top: 0;
     }
 }

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Switch, BrowserRouter } from 'react-router-dom'
-import { PublicRoute } from './utils'
-import { MainLayout } from './layouts'
-import { Portfolio, Journal } from './views'
+import React from "react";
+import { Switch, BrowserRouter } from "react-router-dom";
+import { PublicRoute } from "./utils";
+import { MainLayout } from "./layouts";
+import { Portfolio, Journal, ViewArticle } from "./views";
 
 function Routes() {
     return (
@@ -19,8 +19,14 @@ function Routes() {
                 component={Journal}
                 exact
             />
+            <PublicRoute
+                path="/journal/:id/:topic/:title"
+                layout={MainLayout}
+                component={ViewArticle}
+                exact
+            />
         </BrowserRouter>
-    )
+    );
 }
 
-export default Routes
+export default Routes;
