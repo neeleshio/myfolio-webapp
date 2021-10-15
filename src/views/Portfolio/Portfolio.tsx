@@ -3,6 +3,8 @@ import { Accomplishments, Hero, LangsAndTools, WorkHistory } from './Components'
 import '../../styles/Portfolio.scss'
 
 function Portfolio() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+
     return (
         <div id="portfolio">
             <Hero />

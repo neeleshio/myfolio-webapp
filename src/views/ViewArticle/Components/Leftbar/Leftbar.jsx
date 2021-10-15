@@ -26,12 +26,6 @@ function Leftbar() {
                     </i>
                     <p>1,345 likes</p>
                 </div>
-                <div className="share_btn">
-                    <i>
-                        <RiShareForwardLine />
-                    </i>
-                    <p>Share</p>
-                </div>
                 <div className="bookmark_btn">
                     <i className={!saved && "bookmark_icon"} onClick={handleArticleSave}>
                         <RiBookmarkLine />
@@ -40,6 +34,12 @@ function Leftbar() {
                         <RiBookmarkFill />
                     </i>
                     <p>Save</p>
+                </div>
+                <div className="share_btn">
+                    <i>
+                        <RiShareForwardLine />
+                    </i>
+                    <p>Share</p>
                 </div>
             </div>
         </div>

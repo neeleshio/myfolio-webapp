@@ -4,9 +4,11 @@ import { PublicRoute } from "./utils";
 import { MainLayout } from "./layouts";
 import { Portfolio, Journal, ViewArticle } from "./views";
 
+
 function Routes() {
     return (
         <BrowserRouter>
+
             <PublicRoute
                 path="/"
                 layout={MainLayout}
@@ -20,11 +22,12 @@ function Routes() {
                 exact
             />
             <PublicRoute
-                path="/journal/:topic/:title/:id"
+                path="/article/:title/:id"
                 layout={MainLayout}
                 component={ViewArticle}
                 exact
             />
+
         </BrowserRouter>
     );
 }

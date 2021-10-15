@@ -16,10 +16,10 @@ function Topbar() {
                 <div className="topbar_right">
                     <div className="nav-links">
                         <ul>
-                            {Object.values(links).map((el, index) => (
+                            {Object.values(links).map((link, index) => (
                                 <li key={index}>
-                                    <NavLink activeClassName='is-active' exact to={el.path}>
-                                        {el.name}
+                                    <NavLink activeClassName='is-active' exact={link.path === "/" && true} to={link.path}>
+                                        {link.name}
                                     </NavLink>
                                 </li>
                             ))}
@@ -37,10 +37,10 @@ function Topbar() {
             </div>
             <div className="topbar-mini">
                 <ul>
-                    {Object.values(links).map((el, index) => (
+                    {Object.values(links).map((link, index) => (
                         <li key={index}>
-                            <a href={el.path}>
-                                {el.name}
+                            <a href={link.path}>
+                                {link.name}
                             </a>
                         </li>
                     ))}
