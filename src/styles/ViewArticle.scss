@@ -17,10 +17,14 @@
                 font-size: 12px;
             }
 
-            .like_btn, .share_btn, .bookmark_btn {
+            .like_btn, .bookmark_btn {
                 text-align: center;
                 margin-bottom: 20px;
                 line-height: 25px;
+            }
+
+            .share_btn {
+                text-align: center;
             }
 
             .like_btn {
@@ -56,13 +60,21 @@
 
             .share_btn {
                 i {
-                    font-size: 35px;
+                    cursor: pointer;
+
+                    .share_icon {
+                        transform: rotateY(180deg);
+
+                        &--disabled {
+                            display: none;
+                        }
+                    }
                 }
             }
 
             .bookmark_btn {
                 i {
-                    font-size: 30px;
+                    font-size: 35px;
                     cursor: pointer;
                     display: none;
                 }
@@ -124,18 +136,21 @@
 
                 & > div {
                     margin: 10px 0 5px 0 !important;
-
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
 
                     i {
                         margin-bottom: 0;
                         line-height: 30px;
                         font-size: 25px !important;
                         color: #353535;
+                        padding-right: 3px;
                     }
+                }
 
-                    p {
-                        display: none;
-                    }
+                .share_btn p {
+                    margin-top: 4px; 
                 }
             }
         }

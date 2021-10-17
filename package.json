@@ -1,9 +1,12 @@
 {
-  "name": "amazon-clone-ui",
+  "name": "myfolio-webapp",
   "version": "1.0.0",
   "private": false,
   "dependencies": {
-    "@material-ui/core": "^4.12.2",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/material": "^5.0.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

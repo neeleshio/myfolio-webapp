@@ -5,7 +5,7 @@ export const articles = [
 		topic: 'React Hooks',
 		title: 'How I Made $10,2222 in a Single Month of Freelance Writing',
 		tagline: 'I only worked 16 hrs per week',
-		articleImg: 'https://fireship.io/courses/react-next-firebase/img/featured.jpg',
+		articleImg: 'https://www.tutorialrepublic.com/lib/images/javascript-illustration.png',
 		metaInfo: {
 			date: 'new Date()',
 			read: '5 min read',
