@@ -103,6 +103,10 @@
         }
     }
 
+    // @media screen and (max-width: ) {
+        
+    // }
+
     #bottombar {
         position: fixed;
         bottom: 0;
@@ -119,6 +123,12 @@
     #viewArticle {
         grid-template-columns: 100%;
         margin: 30px 20px;
+
+        .content_container {
+            img {
+                height: 200px;
+            }
+        }
 
         #leftbar {
             position: fixed;
