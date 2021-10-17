@@ -112,19 +112,25 @@
     @media screen and (max-width: 540px) {
         .article_card {
             flex-direction: column-reverse;
+            padding: 0 0 10px 0;
 
-            .topic_container {
-                margin: 8px 0 0 0;
-            }
+            &--left {
+                padding: 0 20px;
 
-            .headline_container {
-                margin-top: 5px;
+                .topic_container {
+                    margin: 8px 0 0 0;
+                }
+    
+                .headline_container {
+                    margin-top: 5px;
+                }
             }
 
             &--right {
                 img {
                     margin-left: 0;
                     width: 100%;
+                    border-radius: 5px 5px 0px 0px;
                 }
             }
         }

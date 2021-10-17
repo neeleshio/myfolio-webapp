@@ -7,7 +7,7 @@ function ArticleCard() {
 
 	const handleClickArticle = (topic: string, title: string, id: string) => {
 		const titl = title.replaceAll(' ', '-');
-		history.push(`article/${titl}/${id}`);
+		history.push(`journal/${titl}/${id}`);
 	};
 
 	return (

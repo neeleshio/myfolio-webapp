@@ -4,9 +4,4 @@ export const topics = [
     { title: "REDUX" },
     { title: "CSS/SASS" },
     { title: "TYPESCRIPT" },
-    { title: "TYPESCRIPT" },
-    { title: "TYPESCRIPT" },
-    { title: "TYPESCRIPT" },
-    { title: "TYPESCRIPT" },
-    { title: "TYPESCRIPT" },
 ]
