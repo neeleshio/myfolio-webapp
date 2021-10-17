@@ -53,6 +53,7 @@
 
                 img {
                     height: 20px;
+                    object-fit: cover;
                 }
             }
 
@@ -98,10 +99,11 @@
             height: 135px;
 
             img {
-                max-width: 200px;
-                max-height: 135px;
+                width: 200px;
+                height: 135px;
                 border-radius: 5px;
                 margin-left: 20px;
+                object-fit: cover;
             }
         }
     }
@@ -122,8 +124,7 @@
             &--right {
                 img {
                     margin-left: 0;
-                    // width: 100px;
-                    // height: 100px;
+                    width: 100%;
                 }
             }
         }
@@ -132,8 +133,9 @@
 
 @media screen and (max-width: 650px) {
     #articleCard {
-        // position: relative;
-        // top: 50px;
+        .article_card {
+            margin: 0 12px 20px 12px;
+        }
     }
 }
 

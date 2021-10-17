@@ -13,6 +13,9 @@ function Topbar() {
                     <button className="btn-2"></button>
                     <button className="btn-3"></button>
                 </div>
+                <div>
+                    <input />
+                </div>
                 <div className="topbar_right">
                     <div className="nav-links">
                         <ul>
