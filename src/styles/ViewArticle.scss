@@ -188,5 +188,17 @@
                 }
             }
         }
+
+        #content {
+            .content_wrapper {
+                img {
+                    height: 200px;
+                }
+
+                .content_main {
+                    padding: 20px 20px;
+                }
+            }
+        }
     }
 }

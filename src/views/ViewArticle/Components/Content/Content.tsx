@@ -14,7 +14,7 @@ function Content() {
                         </div>
                     </div>
                     <div className="content_body">
-                        <h1>Free Django Dashboard - MaterialPRO Lite</h1>
+                        <h1>Free Django Dashbd - MaterialPRO Lite</h1>
                     </div>
                 </div>
             </div>

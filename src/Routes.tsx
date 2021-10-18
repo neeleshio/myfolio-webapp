@@ -2,8 +2,7 @@ import React from "react";
 import { Switch, BrowserRouter } from "react-router-dom";
 import { PublicRoute } from "./utils";
 import { MainLayout } from "./layouts";
-import { Portfolio, Journal, ViewArticle } from "./views";
-
+import { Portfolio, Journal, ViewArticle, NewArticle } from "./views";
 
 function Routes() {
     return (
@@ -25,6 +24,12 @@ function Routes() {
                 path="/journal/:title/:id"
                 layout={MainLayout}
                 component={ViewArticle}
+                exact
+            />
+            <PublicRoute
+                path="/journal/new-article"
+                layout={MainLayout}
+                component={NewArticle}
                 exact
             />
 

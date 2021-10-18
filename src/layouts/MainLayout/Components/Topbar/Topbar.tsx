@@ -3,8 +3,15 @@ import { links } from './Links'
 import { IoMoonSharp } from "react-icons/io5";
 import { IoMdNotificationsOutline, IoIosMoon } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router'
 
 function Topbar() {
+    const history = useHistory()
+
+    const handleNewArticle = () => {
+        history.push(`journal/new-article`)
+    }
+
     return (
         <div id="topbar">
             <div className="topbar-container">
@@ -34,6 +41,9 @@ function Topbar() {
                         </button>
                         <button>
                             <IoMdNotificationsOutline />
+                        </button>
+                        <button className="write_btn" onClick={handleNewArticle}>
+                            Write
                         </button>
                     </div>
                 </div>

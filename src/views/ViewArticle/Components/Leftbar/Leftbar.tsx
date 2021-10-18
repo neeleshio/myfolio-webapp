@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { VscHeart } from 'react-icons/vsc'
 import { RiHeartFill, RiShareForwardLine, RiBookmarkLine, RiBookmarkFill } from 'react-icons/ri'
-import { Favorite, FavoriteBorder, BookmarkAdded, BookmarkBorder, Reply } from '@mui/icons-material';
+import { Favorite, FavoriteBorder, Bookmark, BookmarkBorder, Reply } from '@mui/icons-material';
 
 function Leftbar() {
     const [liked, setLiked] = useState(false)
@@ -19,24 +19,22 @@ function Leftbar() {
         <div id="leftbar">
             <div className="leftbar_wrapper">
                 <div className="like_btn">
-                    <i className={!liked && "heart_icon"} onClick={handleArticleLike}>
+                    <i className={!liked ? "heart_icon" : ""} onClick={handleArticleLike}>
                         <FavoriteBorder />
                     </i>
-                    <i className={liked && "heart_icon"} onClick={handleArticleLike}>
+                    <i className={liked ? "heart_icon" : ""} onClick={handleArticleLike}>
                         <Favorite className="filled" />
                     </i>
                     <p>1,345</p>
                 </div>
                 <div className="bookmark_btn">
-                    <i className={!saved && "bookmark_icon"} onClick={handleArticleSave}>
+                    <i className={!saved ? "bookmark_icon" : ""} onClick={handleArticleSave}>
                         <BookmarkBorder />
                     </i>
-                    <i className={saved && "bookmark_icon"} onClick={handleArticleSave}>
-                        <BookmarkAdded />
+                    <i className={saved ? "bookmark_icon" : ""} onClick={handleArticleSave}>
+                        <Bookmark />
                     </i>
-                    <p>
-                        {saved ? "Saved" : "Save"}
-                    </p>
+                    <p>Save</p>
                 </div>
                 <div className="share_btn">
                     <i>
