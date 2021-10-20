@@ -1,5 +1,6 @@
 import React from 'react'
 import { accomplishLists } from './AccomplishLists'
+import './AccomplishmentsStyles.scss'
 
 function Accomplishments() {
     return (

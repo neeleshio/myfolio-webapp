@@ -1,0 +1,24 @@
+@import '../../styles/config';
+
+#journal {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 30px 6vw;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 70% 30%;
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 80% 20%;
+        padding: 20px 0;
+    }
+    
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+}
+

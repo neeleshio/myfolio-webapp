@@ -1,17 +1,10 @@
 import React from 'react'
 import { links } from './Links'
-import { IoMoonSharp } from "react-icons/io5";
 import { IoMdNotificationsOutline, IoIosMoon } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
-import { useHistory } from 'react-router'
+import './TopbarStyles.scss'
 
 function Topbar() {
-    const history = useHistory()
-
-    const handleNewArticle = () => {
-        history.push(`journal/new-article`)
-    }
-
     return (
         <div id="topbar">
             <div className="topbar-container">
@@ -36,14 +29,16 @@ function Topbar() {
                         </ul>
                     </div>
                     <div className="extra-buttons">
+                        <NavLink to="/journal/new-article">
+                            <button className="write_btn">
+                                Write
+                            </button>
+                        </NavLink>
                         <button>
                             <IoIosMoon />
                         </button>
                         <button>
                             <IoMdNotificationsOutline />
-                        </button>
-                        <button className="write_btn" onClick={handleNewArticle}>
-                            Write
                         </button>
                     </div>
                 </div>

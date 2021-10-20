@@ -1,6 +1,6 @@
 import React from 'react'
 import { Editor } from './Components'
-import '../../styles/NewArticle.scss'
+import './NewArticleStyles.scss'
 
 function NewArticle() {
     return (

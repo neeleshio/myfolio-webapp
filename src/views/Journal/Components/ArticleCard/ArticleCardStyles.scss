@@ -1,0 +1,110 @@
+@import '../../../../styles/config';
+
+#articleCard {
+    .article_card {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        box-shadow: 0 0 0 1px rgba(9, 9, 9, 0.1);
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        margin: 0 22px 20px 22px;
+        cursor: pointer;
+
+        //breakpoint
+        @media screen and (max-width: 540px) {
+            flex-direction: column-reverse;
+            padding: 0 0 10px 0;
+            margin-bottom: 30px;
+        }
+        
+        @media screen and (max-width: 650px) {
+            margin: 0 12px 20px 12px;
+        }
+
+        &--left {
+            //breakpoint
+            @media screen and (max-width: 540px) {
+                padding: 0 20px;
+            }
+
+            .topic_container {
+                display: flex;
+                align-items: center;
+
+                //breakpoint
+                @media screen and (max-width: 540px) {
+                    margin: 8px 0 0 0;
+                }
+
+                h3 { 
+                    font-size: 13px;
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+
+                img {
+                    height: 20px;
+                    object-fit: cover;
+                }
+            }
+
+            .headline_container {
+                margin: 10px 0 8px 0;
+
+                //breakpoint
+                @media screen and (max-width: 540px) {
+                    margin-top: 5px;
+                }
+
+                h1 {
+                    font-size: 18px;
+                    margin-bottom: 3px;         
+                }
+
+                h3 {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $silver-text;
+                }
+            }
+
+            .meta_info {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: $silver-text;
+                    margin-right: 5px;
+                }
+
+                .keyword {
+                    background-color: $silver-bg;
+                    border-radius: 10px;
+                    padding: 2px 9px;
+                }
+            }
+        }
+
+        &--right {
+            display: contents;
+
+            img {
+                width: 200px;
+                height: 135px;
+                border-radius: 5px;
+                margin-left: 20px;
+                object-fit: cover;
+
+                //breakpoint
+                @media screen and (max-width: 540px) {
+                    margin-left: 0;
+                    width: 100%;
+                    border-radius: 5px 5px 0px 0px;
+                }
+            }
+        }
+    }
+}

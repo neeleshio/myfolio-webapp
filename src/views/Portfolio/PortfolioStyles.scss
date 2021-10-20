@@ -1,0 +1,21 @@
+@import '../../styles/config';
+
+#portfolio {
+    padding: 30px 6vw;
+
+    @media screen and (max-width: 980px) {
+        padding: 20px 0;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        margin: 0 4px;
+
+        @media screen and (max-width: 980px) {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+@import '../../../../styles/config';
+
+#sideFilterbar {
+    margin: 22px;
+
+    @media screen and (max-width: 650px) {
+        margin-top: 0;
+    }
+
+    div {
+        position: sticky;
+        top: 100px;
+
+        h3 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-left: 2px;
+        }
+    
+        button {
+            padding: 6px 20px;
+            background-color: $white-bg;
+            border: 1px solid $silver-bg;
+            color: $silver-text;
+            font-size: 11px;
+            border-radius: 3px;
+            margin: 0 15px 10px 0;
+            cursor: pointer;
+        }
+    }
+}

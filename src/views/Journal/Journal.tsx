@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArticleCard, SideFilterbar } from './Components'
-import '../../styles/Journal.scss'
+import './JournalStyles.scss'
 
 function Journal() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;

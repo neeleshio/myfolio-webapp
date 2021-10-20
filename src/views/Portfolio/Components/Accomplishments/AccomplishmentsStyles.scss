@@ -1,0 +1,51 @@
+@import '../../../../styles/config.scss';
+
+#accomplishments {
+    margin: 45px 22px 0 22px;
+
+    @media screen and (max-width: 630px) {
+        margin: 0px 10px 0 10px;
+    }
+
+    .container {
+        h2 {
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+    }
+
+    .card-container {
+        margin-top: 15px;
+        height: 445px;
+        overflow-y: auto;
+        border-radius: 10px;
+
+        @media screen and (max-width: 630px) {
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 318px;
+            min-height: 70px;
+            background-color: $white-bg;
+            margin-bottom: 14px;
+            border-radius: 10px;
+
+            &:nth-child(odd) {
+                float: left;
+                box-shadow: 10px 10px 2px -8px #E4FAE6;
+            }
+
+            &:nth-child(even) {
+                float: right;
+                box-shadow: -10px 10px 2px -8px #FAF3E2;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+}

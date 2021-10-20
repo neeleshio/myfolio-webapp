@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { languages } from './Languages'
+import './LangsAndToolsStyles.scss'
 
 function LangsAndTools() {
     const [activeButton, setActiveButton] = useState("Main")

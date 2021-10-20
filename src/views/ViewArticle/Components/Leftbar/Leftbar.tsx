@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { VscHeart } from 'react-icons/vsc'
-import { RiHeartFill, RiShareForwardLine, RiBookmarkLine, RiBookmarkFill } from 'react-icons/ri'
 import { Favorite, FavoriteBorder, Bookmark, BookmarkBorder, Reply } from '@mui/icons-material';
+import './LeftbarStyles.scss'
 
 function Leftbar() {
     const [liked, setLiked] = useState(false)

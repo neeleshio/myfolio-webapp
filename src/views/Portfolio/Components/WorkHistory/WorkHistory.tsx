@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { companies } from './Companies'
 import CardFlip from 'react-card-flip';
+import './WorkHistoryStyles.scss'
 
 function WorkHistory() {
     const [state, setState] = useState<any>({})

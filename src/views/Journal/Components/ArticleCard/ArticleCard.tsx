@@ -1,6 +1,7 @@
 import React from 'react';
 import { articles } from './Articles';
 import { useHistory } from 'react-router-dom';
+import './ArticleCardStyles.scss'
 
 function ArticleCard() {
 	const history = useHistory();

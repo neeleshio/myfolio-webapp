@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../styles/ViewArticle.scss'
 import { Content, Leftbar } from './Components'
+import './ViewArticleStyles.scss'
 
 function ViewArticle() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { topics } from './Topics'
+import './SideFilterbarStyles.scss'
 
 function SideFilterbar() {
     return (
