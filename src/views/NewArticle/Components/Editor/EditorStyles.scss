@@ -1,3 +1,35 @@
+@import '../../../../styles/config';
+
 #editor {
-    margin: 20px 0;
+    margin: 40px 0;
+}
+
+#publish {
+    position: fixed;
+    bottom: 0;
+    max-width: 650px;
+    left: 50%;
+    margin: 25px 25px 25px -325px;
+
+    @media screen and (max-width: 385px) {
+        margin-left: 20px;
+        left: 0;
+    }
+
+    button {
+        padding: 6px 10px;
+        border-radius: 3px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .publish_btn {
+        background-color: $navy-blue-bg;
+        color: $white-text;
+    }
+
+    .save_draft_btn {
+        background-color: $white-bg;
+        color: $navy-blue-text;
+    }
 }

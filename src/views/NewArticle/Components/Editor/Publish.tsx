@@ -1,15 +1,16 @@
 import React from 'react'
 
 function Publish() {
-    const handlePublishArticle = () => {
-
-    }
-
     return (
-        <div>
-            <button onClick={handlePublishArticle}>
-                Publish
-            </button>
+        <div id="publish">
+            <div className="publish_btn_wrapper">
+                <button className="save_draft_btn">
+                    Save draft
+                </button>
+                <button className="publish_btn">
+                    Publish
+                </button>
+            </div>
         </div>
     )
 }

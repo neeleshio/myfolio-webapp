@@ -3,14 +3,15 @@ import EditorJs from "react-editor-js";
 import { EDITOR_JS_TOOLS } from "./tools";
 import Publish from './Publish';
 import './EditorStyles.scss'
+import Modal from '../../../../components/Modal'
 
 function Editor() {
     const instanceRef: React.MutableRefObject<any> = useRef(null)
 
-    const handleSave = async () => {
-        const savedData = await instanceRef.current.save()
-        console.log(savedData)
-    }
+    // const handleSave = async () => {
+    //     const savedData = await instanceRef.current.save()
+    //     console.log(savedData)
+    // }
 
     return (
         <>
@@ -22,7 +23,6 @@ function Editor() {
                         time: 1556098174501,
                         blocks: [
                             {
-
                                 type: "image",
                                 data: {
                                     "file": {
@@ -30,7 +30,6 @@ function Editor() {
                                 }
                             },
                             {
-
                                 type: "header",
                                 data: {
                                     level: 1,
@@ -41,7 +40,6 @@ function Editor() {
                 />
             </div>
 
-            <button onClick={handleSave}>Hiii</button>
             <Publish />
         </>
     )
