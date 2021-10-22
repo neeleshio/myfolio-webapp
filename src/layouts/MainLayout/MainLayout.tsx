@@ -8,7 +8,9 @@ const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
 
     return (
         <div id="mainLayout">
-            {!state["open"] && <Modal />}
+            {
+                state["open"] && <Modal />
+            }
             <Topbar />
             <main>
                 <div className="navbar-bg"></div>

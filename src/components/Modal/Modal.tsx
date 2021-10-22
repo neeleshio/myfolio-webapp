@@ -3,10 +3,12 @@ import { Warning, ErrorRounded } from '@mui/icons-material';
 import './ModalStyles.scss';
 import { handleOpenModal } from '../../redux/Modal/ModalReducer';
 import { useSelector, useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom'
 
 function Modal() {
-    // const state = useSelector(state => state.modal)
     const dispatch = useDispatch()
+
+    dispatch(handleOpenModal({ value: true }))
 
     return (
         <div id="modal" data-keyboard="false" data-backdrop="static">
@@ -32,13 +34,13 @@ function Modal() {
                 </div>
                 <div className="modal_footer">
                     <p>Report</p>
-                    <button
-                        onClick={(event: React.MouseEvent<HTMLElement>) => {
-                            dispatch(handleOpenModal({ value: true }))
-                        }}
-                    >
-                        Ok
-                    </button>
+                    <NavLink to="/">
+                        <button
+                            onClick={(event: React.MouseEvent<HTMLElement>) => {
+                                dispatch(handleOpenModal({ value: false }))
+                            }}
+                        >Ok</button>
+                    </NavLink>
                 </div>
             </div>
         </div>
