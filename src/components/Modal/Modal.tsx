@@ -1,8 +1,13 @@
 import React from 'react'
 import { Warning, ErrorRounded } from '@mui/icons-material';
-import './ModalStyles.scss'
+import './ModalStyles.scss';
+import { handleOpenModal } from '../../redux/Modal/ModalReducer';
+import { useSelector, useDispatch } from 'react-redux';
 
-function Modal(): JSX.Element {
+function Modal() {
+    // const state = useSelector(state => state.modal)
+    const dispatch = useDispatch()
+
     return (
         <div id="modal" data-keyboard="false" data-backdrop="static">
             <div className="modal_wrapper">
@@ -27,7 +32,13 @@ function Modal(): JSX.Element {
                 </div>
                 <div className="modal_footer">
                     <p>Report</p>
-                    <button>Ok</button>
+                    <button
+                        onClick={(event: React.MouseEvent<HTMLElement>) => {
+                            dispatch(handleOpenModal({ value: true }))
+                        }}
+                    >
+                        Ok
+                    </button>
                 </div>
             </div>
         </div>

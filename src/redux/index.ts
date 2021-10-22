@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import ModalReducer from './Modal/ModalReducer'
+import modal from './Modal/ModalReducer'
 
 const store = configureStore({
     reducer: {
-        ModalReducer
+        modal
     }
 })
 
