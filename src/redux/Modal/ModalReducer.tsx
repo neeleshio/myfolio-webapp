@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    open: false
+    open: false,
+    title: "",
+    button: ""
 }
 
 const modalSlice = createSlice({
@@ -10,6 +12,8 @@ const modalSlice = createSlice({
     reducers: {
         handleOpenModal(state, { payload }) {
             state.open = payload.value
+            state.title = payload.title
+            state.button = payload.button
         }
     }
 })

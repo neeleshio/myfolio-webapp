@@ -5,16 +5,21 @@ import { handleOpenModal } from '../../redux/Modal/ModalReducer';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom'
 
-function Modal() {
+function Modal(props: any) {
     const dispatch = useDispatch()
+    const state = useSelector((state: any) => state.modal)
 
-    dispatch(handleOpenModal({ value: true }))
+    const { som } = props
+
+    // dispatch(handleOpenModal({ value: true }))
+
+    console.log(som)
 
     return (
         <div id="modal" data-keyboard="false" data-backdrop="static">
             <div className="modal_wrapper">
                 <div className="modal_header">
-                    <h2>There was a problem installing XD.</h2>
+                    <h2>{state.title}</h2>
                     <i><Warning /></i>
                 </div>
                 <hr />
@@ -39,7 +44,7 @@ function Modal() {
                             onClick={(event: React.MouseEvent<HTMLElement>) => {
                                 dispatch(handleOpenModal({ value: false }))
                             }}
-                        >Ok</button>
+                        >{state.button}</button>
                     </NavLink>
                 </div>
             </div>
