@@ -1,30 +1,10 @@
 export const accomplishLists = [
     {
-        title: "",
+        title: "Excellent debugging skills",
         summary: ""
     },
     {
-        title: "",
-        summary: ""
-    },
-    {
-        title: "",
-        summary: ""
-    },
-    {
-        title: "",
-        summary: ""
-    },
-    {
-        title: "",
-        summary: ""
-    },
-    {
-        title: "",
-        summary: ""
-    },
-    {
-        title: "",
+        title: "Excellent debugging skills",
         summary: ""
     }
 ]

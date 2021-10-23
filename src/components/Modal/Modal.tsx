@@ -1,26 +1,21 @@
 import React from 'react'
-import { Warning, ErrorRounded } from '@mui/icons-material';
 import './ModalStyles.scss';
 import { handleOpenModal } from '../../redux/Modal/ModalReducer';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom'
+import { ErrorRounded } from '@mui/icons-material';
+import { WarningIcon, CheckCircleIcon, NearbyErrorIcon } from './CustomIcons'
 
 function Modal(props: any) {
     const dispatch = useDispatch()
     const state = useSelector((state: any) => state.modal)
 
-    const { som } = props
-
-    // dispatch(handleOpenModal({ value: true }))
-
-    console.log(som)
-
     return (
         <div id="modal" data-keyboard="false" data-backdrop="static">
             <div className="modal_wrapper">
                 <div className="modal_header">
-                    <h2>{state.title}</h2>
-                    <i><Warning /></i>
+                    <h2>Something went wrong</h2>
+                    <i><NearbyErrorIcon /></i>
                 </div>
                 <hr />
                 <div className="modal_body">

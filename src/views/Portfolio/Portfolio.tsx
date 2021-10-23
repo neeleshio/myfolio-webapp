@@ -16,6 +16,8 @@ function Portfolio() {
                 </div>
                 <div className="grid-item">
                     <Accomplishments />
+
+                    {/* <Accomplishments /> */}
                 </div>
             </div>
         </div>
