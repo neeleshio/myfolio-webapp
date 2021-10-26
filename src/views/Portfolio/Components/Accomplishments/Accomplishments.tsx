@@ -3,17 +3,22 @@ import { accomplishLists } from './AccomplishLists'
 import './AccomplishmentsStyles.scss'
 
 function Accomplishments() {
-    const width: string = "55"
-
     const [counter, setCounter] = useState(0)
 
+    const time: number = 5000;
+    const delay: number = time * 0.25 / 100
+
     useEffect(() => {
-        if (counter < 400) {
+        start()
+    }, [counter])
+
+    const start = (): void => {
+        if (counter <= 100) {
             setTimeout(() => {
                 setCounter(counter + 0.25)
-            }, 12.5);
+            }, delay);
         }
-    }, [counter])
+    }
 
     return (
         <div id="accomplishments">

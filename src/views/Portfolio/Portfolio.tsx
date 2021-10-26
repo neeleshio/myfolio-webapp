@@ -1,6 +1,7 @@
 import React from 'react'
 import { Accomplishments, Hero, LangsAndTools, WorkHistory } from './Components'
 import './PortfolioStyles.scss'
+// import Highlight from 'react-highlight'
 
 function Portfolio() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -18,6 +19,9 @@ function Portfolio() {
                     <Accomplishments />
 
                     {/* <Accomplishments /> */}
+                    {/* <Highlight data-language={"javascript"}>
+                        {`function foo() { return 'bar' }`}
+                    </Highlight> */}
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@
     .article_card {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 20px;
         box-shadow: 0 0 0 1px rgba(9, 9, 9, 0.1);
         border-radius: 10px;
@@ -46,6 +47,7 @@
                 img {
                     height: 20px;
                     object-fit: cover;
+                    border-radius: 50%;
                 }
             }
 
@@ -67,6 +69,20 @@
                     font-weight: 500;
                     color: $silver-text;
                 }
+                
+                div {
+                    display: flex;
+
+                    .keyword {
+                        font-size: 11px;
+                        font-weight: 400;
+                        color: $silver-text;
+                        margin-right: 5px;
+                        background-color: $silver-bg;
+                        border-radius: 10px;
+                        padding: 2px 9px;
+                    }
+                }
             }
 
             .meta_info {
@@ -78,12 +94,6 @@
                     font-weight: 400;
                     color: $silver-text;
                     margin-right: 5px;
-                }
-
-                .keyword {
-                    background-color: $silver-bg;
-                    border-radius: 10px;
-                    padding: 2px 9px;
                 }
             }
         }

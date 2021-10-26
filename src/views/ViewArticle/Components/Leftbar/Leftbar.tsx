@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { Favorite, FavoriteBorder, Bookmark, BookmarkBorder, Reply } from '@mui/icons-material';
 import './LeftbarStyles.scss'
+import { useSelector } from 'react-redux'
 
 function Leftbar() {
+    const state = useSelector((state: any) => state.viewArticle)
+
     const [liked, setLiked] = useState(false)
     const [saved, setSaved] = useState(false)
 
@@ -24,7 +27,7 @@ function Leftbar() {
                     <i className={liked ? "heart_icon" : ""} onClick={handleArticleLike}>
                         <Favorite className="filled" />
                     </i>
-                    <p>1,345</p>
+                    <p>{state?.["likes"]}</p>
                 </div>
                 <div className="bookmark_btn">
                     <i className={!saved ? "bookmark_icon" : ""} onClick={handleArticleSave}>

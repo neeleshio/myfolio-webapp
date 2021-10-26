@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import modal from './Modal/ModalReducer'
+import viewArticle from './ViewArticle/ViewArticleReducer'
 
 const store = configureStore({
     reducer: {
-        modal
+        modal,
+        viewArticle
     }
 })
 
