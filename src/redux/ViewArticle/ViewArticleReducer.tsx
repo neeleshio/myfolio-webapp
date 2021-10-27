@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     postedOn: "",
-    topicImg: "",
+    difficulty: "",
     topic: "",
     title: "",
     mainImg: "",
@@ -16,8 +16,9 @@ const viewArticleSlice = createSlice({
     reducers: {
         handleArticleData(state, { payload }) {
             const { data } = payload
+
             state.postedOn = data["created"]
-            state.topicImg = data["topicImg"]
+            state.difficulty = data["difficulty"]
             state.topic = data["topic"]
             state.title = data["title"]
             state.mainImg = data["mainImg"]

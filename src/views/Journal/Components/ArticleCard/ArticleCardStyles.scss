@@ -29,6 +29,12 @@
                 padding: 0 20px;
             }
 
+            $colors: (
+                diff-hard: #FA6058,
+                diff-medium: #FCBD2E,
+                diff-easy: #30CA41,
+            );
+
             .topic_container {
                 display: flex;
                 align-items: center;
@@ -44,10 +50,18 @@
                     margin-left: 10px;
                 }
 
-                img {
-                    height: 20px;
-                    object-fit: cover;
-                    border-radius: 50%;
+                button {
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50px;
+                    cursor: default;
+                    // background-color: $navy-blue-bg;
+                }
+
+                @each $name, $color in $colors {
+                    .#{$name} {
+                        background-color: #{$color};
+                    }
                 }
             }
 
@@ -61,7 +75,8 @@
 
                 h1 {
                     font-size: 18px;
-                    margin-bottom: 3px;         
+                    margin-bottom: 15px;
+                    font-weight: 600;         
                 }
 
                 h3 {

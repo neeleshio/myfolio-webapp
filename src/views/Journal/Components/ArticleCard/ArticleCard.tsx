@@ -18,7 +18,8 @@ function ArticleCard() {
 	}, [])
 
 	const handleClickArticle = (article: any) => {
-		const titl = article["title"].replaceAll(' ', '-');
+		let titl = article["title"].replaceAll(' ', '-');
+		titl = titl.replaceAll('#', '');
 		const id = article["_id"]
 		history.push(`journal/${titl}/${id}`);
 
@@ -35,7 +36,7 @@ function ArticleCard() {
 				>
 					<div className="article_card--left">
 						<div className="topic_container">
-							<img src={article?.["topicImg"]} alt="react" />
+							<button className={`diff-${article?.["difficulty"]}`}></button>
 							<h3>{article?.["topic"]}</h3>
 						</div>
 						<div className="headline_container">

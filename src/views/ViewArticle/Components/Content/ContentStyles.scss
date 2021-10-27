@@ -34,15 +34,26 @@
                 padding: 20px 20px;
             }
 
+            $colors: (
+                diff-hard: #FA6058,
+                diff-medium: #FCBD2E,
+                diff-easy: #30CA41,
+            );
+
             .topic_wrapper {
                 display: flex;
                 align-items: center;
     
-                img {
+                button {
+                    padding: 8px;
                     border-radius: 50px;
                     margin-right: 15px;
-                    width: 35px;
-                    height: 35px;
+                }
+
+                @each $name, $color in $colors {
+                    .#{$name} {
+                        background-color: #{$color};
+                    }
                 }
     
                 h3 {

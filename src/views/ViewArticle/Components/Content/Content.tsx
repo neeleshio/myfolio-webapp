@@ -7,7 +7,7 @@ import ReactEmbedGist from 'react-embed-gist';
 
 function Content() {
     const [articleContent, setArticleContent] = useState([])
-    const state = useSelector((state: any) => state.viewArticle)
+    const [article, setArticle] = useState<any>([])
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -15,7 +15,9 @@ function Content() {
         const id = path.split('/')[3]
 
         Axios.get(`/article-content/${id}`).then(res => {
+            setArticle(res?.["data"]?.[0]?.["article"])
             setArticleContent(res?.["data"]?.[0]?.["content"])
+
             const likes = res?.["data"]?.[0]?.["likes"]
 
             dispatch(handleArticleLikes({ likes: likes }))
@@ -73,17 +75,17 @@ function Content() {
     return (
         <div id="content">
             <div className="content_wrapper">
-                <img src={state?.["mainImg"]} alt="main-img" />
+                <img src={article?.["mainImg"]} alt="main-img" />
                 <div className="content_main">
                     <div className="topic_wrapper">
-                        <img src={state?.["topicImg"]} alt="topic-img" />
+                        <button className={`diff-${article?.["difficulty"]}`}></button>
                         <div>
-                            <h3>{state?.["topic"]}</h3>
-                            <h4>{state?.["postedOn"]}</h4>
+                            <h3>{article?.["topic"]}</h3>
+                            <h4>{article?.["created"]}</h4>
                         </div>
                     </div>
                     <div className="content_body">
-                        <h1>{state?.["title"]}</h1>
+                        <h1>{article?.["title"]}</h1>
 
                         <div>
                             {articleContent && (
