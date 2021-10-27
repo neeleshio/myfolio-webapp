@@ -48,12 +48,14 @@ function Content() {
             case 'p':
                 return <p>{res?.["data"]?.["text"]}</p>
             case 'cb':
-                return <ReactEmbedGist gist="vbresan/11b9b12a510a8996d58e92347e683acc" />
+                return <ReactEmbedGist gist="JuanCarlosMarino/8c7cb71fa6311e0e813866d02f97f9cf" />
             case 'ol':
                 return (
                     <ol>
                         {res?.["data"]?.["items"].map((el: any, index: number) => (
-                            <li>{index + 1}. {el}</li>
+                            <div>
+                                <span>{index + 1}.</span><li> {el}</li>
+                            </div>
                         ))}
                     </ol>
                 )
@@ -61,14 +63,16 @@ function Content() {
                 return (
                     <ul>
                         {res?.["data"]?.["items"].map((el: any, index: number) => (
-                            <li>● {el}</li>
+                            <div>
+                                <span>●</span><li> {el}</li>
+                            </div>
                         ))}
                     </ul>
                 )
             case 'img':
                 return <img src={res?.["data"]?.["url"]} alt="react" />
             case 'q':
-                return <q>{res?.["data"]?.["text"]}</q>
+                return <q><p>{res?.["data"]?.["text"]}</p></q>
         }
     }
 
@@ -84,10 +88,10 @@ function Content() {
                             <h4>{article?.["created"]}</h4>
                         </div>
                     </div>
-                    <div className="content_body">
+                    <div className="content_body_wrapper">
                         <h1>{article?.["title"]}</h1>
 
-                        <div>
+                        <div className="content_body">
                             {articleContent && (
                                 Object.values(articleContent).map((res: any) => (
                                     handleSwitchContent(res)
