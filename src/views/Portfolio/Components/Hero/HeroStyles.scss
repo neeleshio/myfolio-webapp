@@ -27,6 +27,7 @@
 
         @media screen and (max-width: 490px) {
             border-radius: 4px;
+            background-color: unset;
         }
     }
 
@@ -126,7 +127,7 @@
                 width: 40px;
                 height: 40px;
                 background-color: #ffffff;
-                border-radius: 8px;
+                border-radius: 4px;
                 box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
                 font-size: 9.5px;
                 font-weight: 600;
