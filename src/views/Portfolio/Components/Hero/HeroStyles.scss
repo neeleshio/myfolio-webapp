@@ -22,12 +22,12 @@
 
         @media screen and (max-width: 650px) {
             flex-direction: column;
-            margin: 0;
+            margin: 20px 10px;
+            border-radius: 4px;
         }
 
         @media screen and (max-width: 490px) {
-            border-radius: 4px;
-            background-color: unset;
+            margin: 10px 0px 0px 0px;
         }
     }
 
@@ -49,7 +49,8 @@
             }
 
             @media screen and (max-width: 650px) {
-                font-size: 21px;
+                font-size: 22px;
+                font-weight: 700;
             }
         }
     
