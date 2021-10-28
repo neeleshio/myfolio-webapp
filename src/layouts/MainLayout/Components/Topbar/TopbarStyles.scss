@@ -44,13 +44,14 @@
                 margin-right: 8px;
                 // border-radius: 50px;
                 cursor: pointer;
+                background-color: #D6D6D7;
             }
 
-            @each $name, $color in $colors {
-                .#{$name} {
-                    background-color: #{$color};
-                }
-            }
+            // @each $name, $color in $colors {
+            //     .#{$name} {
+            //         background-color: #{$color};
+            //     }
+            // }
         }
 
         .topbar_right {
@@ -145,6 +146,7 @@
                     color: $white-text;
                     border-radius: 4px;
                     font-size: 12px;
+                    visibility: hidden;
                 }
             }
 
