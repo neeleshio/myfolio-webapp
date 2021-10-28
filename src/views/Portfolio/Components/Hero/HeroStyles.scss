@@ -42,6 +42,9 @@
             font-weight: 600;
             color: $navy-blue-text;
             padding-bottom: 1px;
+            background: linear-gradient(to right, #0575e6, #021b79);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             //breakpoint
             @media screen and (max-width: 800px) {

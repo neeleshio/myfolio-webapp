@@ -7,7 +7,7 @@ function Hero() {
         <div id="hero">
             <div className="hero-container">
                 <div className="intro">
-                    <h2>Hey there! &nbsp;I Am Neelesh</h2>
+                    <h2>Hey der! &nbsp;I Am Neelesh</h2>
                     <h3>I'm a Frontend Development Engineer</h3>
                 </div>
                 {/* <div className="coder-img"> */}
