@@ -2,7 +2,6 @@ import React from 'react'
 import { Topbar } from './Components'
 import Modal from '../../components/Modal'
 import { useSelector } from 'react-redux'
-import { Ellipsis } from '../../components/Loaders/Ellipsis'
 
 const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
     const state = useSelector((state: any) => state.modal)
@@ -12,8 +11,6 @@ const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
             {
                 state["open"] && <Modal />
             }
-
-            {/* <Ellipsis /> */}
 
             <Topbar />
             <main>

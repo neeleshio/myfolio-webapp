@@ -40,9 +40,9 @@
             }
 
             button {
-                padding: 7.5px;
+                padding: 7.5px 3px;
                 margin-right: 8px;
-                border-radius: 50px;
+                // border-radius: 50px;
                 cursor: pointer;
             }
 
@@ -65,7 +65,7 @@
                 font-size: 13px;
 
                 //breakpoint
-                @media screen and (max-width: 650px) {
+                @media screen and (max-width: 649px) {
                     display: none;
                 }
 
