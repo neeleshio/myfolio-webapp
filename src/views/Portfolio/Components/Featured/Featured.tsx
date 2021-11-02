@@ -25,7 +25,10 @@ function Featured() {
             <div className="container">
                 <h2>Featured ★</h2>
                 <div className="card-container">
-                    <div className="card-cont"></div>
+                    <div className="wrapper">
+                        <h3>New Article: Javscript Array and Linked List and DSA for dumminies and for non-beginners</h3>
+                        <button>Check out</button>
+                    </div>
                 </div>
             </div>
         </div>
