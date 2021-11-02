@@ -25,7 +25,7 @@ function Featured() {
             <div className="container">
                 <h2>Featured ★</h2>
                 <div className="card-container">
-
+                    <div className="card-cont"></div>
                 </div>
             </div>
         </div>
