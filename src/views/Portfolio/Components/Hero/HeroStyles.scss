@@ -40,7 +40,9 @@
         h2 {
             font-size: 23px;
             font-weight: 600;
-            color: $navy-blue-text;
+            background: linear-gradient(to right, #0575e6, #021b79);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             padding-bottom: 1px;
 
             //breakpoint
@@ -51,9 +53,6 @@
             @media screen and (max-width: 650px) {
                 font-size: 22px;
                 font-weight: 700;
-                background: linear-gradient(to right, #0575e6, #021b79);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
         }
     
@@ -98,11 +97,13 @@
             }
 
             h3 {
-                font-size: 50px;
-                font-weight: 400;
-                color: $navy-blue-text;
-                padding: 0 5px;
-                line-height: 50px;
+                .exp_count {
+                    font-size: 50px;
+                    font-weight: 400;
+                    color: $navy-blue-text;
+                    padding: 0 5px;
+                    line-height: 50px;
+                }
     
                 span {
                     font-size: 30px;

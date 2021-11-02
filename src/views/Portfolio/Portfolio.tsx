@@ -1,5 +1,5 @@
 import React from 'react'
-import { Accomplishments, Hero, LangsAndTools, WorkHistory } from './Components'
+import { Accomplishments, Featured, Hero, LangsAndTools, WorkHistory } from './Components'
 import './PortfolioStyles.scss'
 // import Highlight from 'react-highlight'
 
@@ -18,10 +18,7 @@ function Portfolio() {
                 <div className="grid-item">
                     <Accomplishments />
 
-                    {/* <Accomplishments /> */}
-                    {/* <Highlight data-language={"javascript"}>
-                        {`function foo() { return 'bar' }`}
-                    </Highlight> */}
+                    {<Featured />}
                 </div>
             </div>
         </div>
