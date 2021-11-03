@@ -119,6 +119,26 @@
                 min-width: 100px;
             }
 
+            @media screen and (max-width: 980px) {
+                min-width: 160px;
+                max-width: 180px;
+            }
+
+            @media screen and (max-width: 620px) {
+                min-width: 120px;
+                max-width: 145px;
+            }
+
+            @media screen and (max-width: 490px) {
+                min-height: 120px;
+                max-height: 200px;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-right: 0;
+                margin-bottom: 20px;
+                max-width: 1000px;
+            }
+
             h2 {
                 font-size: 13px;
                 font-weight: 600;

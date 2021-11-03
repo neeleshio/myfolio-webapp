@@ -12,7 +12,7 @@ export const companies = [
         timeline: "Jul 2020 - Sep 2020",
         logo: "./images/frontrow.svg",
         aboutCompany: "",
-        aboutRole: ""
+        aboutRole: "Developed an Analytics dashboard for different social media groups engagement data."
     },
     {
         name: "Living Heritage",
@@ -20,6 +20,6 @@ export const companies = [
         timeline: "Feb 2020 - Apr 2020",
         logo: "./images/lh.svg",
         aboutCompany: "",
-        aboutRole: ""
+        aboutRole: "Worked on microservice architecture & involved in various APIs development, maintained & monitored databases"
     }
 ]

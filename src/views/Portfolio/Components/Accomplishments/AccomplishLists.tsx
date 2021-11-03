@@ -27,4 +27,12 @@ export const accomplishLists = [
         title: "Other than coding I’m an Investor & stock market enthusiastic.",
         summary: ""
     },
+    {
+        title: "Dont stop me.",
+        summary: ""
+    },
+    {
+        title: "Somebody try to stop me.",
+        summary: ""
+    },
 ]

@@ -6,7 +6,10 @@ function Accomplishments() {
     const [counter, setCounter] = useState(0)
     const [card, setCard] = useState(0)
     const [items, setItems] = useState([])
-    const [cardExit, setCardExit] = useState(false)
+
+    const [one, setOne] = useState(0)
+    const [two, setTwo] = useState(1)
+    const [three, setThree] = useState(2)
 
     const time: number = 5000;
     const delay: number = time * 0.25 / 100
@@ -15,14 +18,33 @@ function Accomplishments() {
         start()
     }, [counter])
 
-
-    // useEffect(() => {
-    //     setCardExit(false)
-    // }, [cardExit])
+    useEffect(() => {
+        setOne(card)
+    }, [card])
 
     useEffect(() => {
+        setTwo(one + 1)
+    }, [one])
+
+    useEffect(() => {
+        setThree(two + 1)
+    }, [two])
+
+    useEffect(() => {
+        setThree(0)
+    }, [three === Object.values(accomplishLists).length])
+
+    useEffect(() => {
+        setTwo(0)
+        setThree(1)
+    }, [two === Object.values(accomplishLists).length])
+
+    useEffect(() => {
+        setOne(0)
+        setTwo(1)
+        setThree(2)
         setCard(0)
-    }, [card === Object.values(accomplishLists).length - 1])
+    }, [one === Object.values(accomplishLists).length])
 
     const start = (): void => {
         if (counter < 100) {
@@ -30,14 +52,9 @@ function Accomplishments() {
                 setCounter(counter + 0.25)
             }, delay);
         } else if (counter === 100) {
-            currentCard()
+            setCard(card + 1)
             setCounter(0)
         }
-    }
-
-    const currentCard = () => {
-        setCardExit(true)
-        setCard(card + 1)
     }
 
     return (
@@ -45,9 +62,9 @@ function Accomplishments() {
             <div className="container">
                 <h2>Facts about Me</h2>
                 <div className="card-container">
-                    <div className={cardExit ? "card first_card" : "card"}>
+                    <div className="card">
                         <div>
-                            <h3>{accomplishLists?.[card]?.['title']}</h3>
+                            <h3>{accomplishLists?.[one]?.['title']}</h3>
                         </div>
                         <span
                             style={{ width: `${100 - counter}%` }}
@@ -55,7 +72,7 @@ function Accomplishments() {
                     </div>
                     <div className="card">
                         <div>
-                            <h3>{accomplishLists?.[card + 1]?.['title']}</h3>
+                            <h3>{accomplishLists?.[two]?.['title']}</h3>
                         </div>
                         <span
                             style={{ width: `${100}%` }}
@@ -63,7 +80,7 @@ function Accomplishments() {
                     </div>
                     <div className="card">
                         <div>
-                            <h3>{accomplishLists?.[card + 2]?.['title']}</h3>
+                            <h3>{accomplishLists?.[three]?.['title']}</h3>
                         </div>
                         <span
                             style={{ width: `${100}%` }}
