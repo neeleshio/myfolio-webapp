@@ -4,19 +4,23 @@ import { IoLogoYoutube } from "react-icons/io5";
 export const links = [
     {
         title: 'LinkedIn',
-        icon: './images/linkedin.svg'
+        icon: './images/linkedin.svg',
+        href: "https://linkedin.com/in/neeleshio"
     },
     {
         title: 'Youtube',
-        icon: './images/youtube.svg'
+        icon: './images/youtube.svg',
+        href: ""
     },
     {
         title: 'Github',
-        icon: './images/github.svg'
+        icon: './images/github.svg',
+        href: "https://github.com/neeleshio"
     },
     {
         title: 'Instagram',
-        icon: './images/insta.svg'
+        icon: './images/insta.svg',
+        href: "https://instagram.com/neeleshio"
     },
 
 ]
