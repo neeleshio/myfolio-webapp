@@ -41,7 +41,8 @@ function Modal(props: any) {
                     <NavLink to={state?.["buttonLink"]}>
                         <button
                             onClick={(event: React.MouseEvent<HTMLElement>) => {
-                                dispatch(handleOpenModal({ open: false }))
+                                dispatch(handleOpenModal({ open: false, opened: true }));
+                                localStorage.setItem("closed", "true")
                             }}
                         >{state?.["buttonName"]}</button>
                     </NavLink>

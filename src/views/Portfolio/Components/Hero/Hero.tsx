@@ -62,9 +62,11 @@ function Hero() {
                     {/* <h4>Lets connect..</h4> */}
                     <ul className="social-container">
                         {Object.values(links).map((el, index) => (
-                            <div key={index} className="card">
-                                <img src={el.icon} alt={el.title} />
-                            </div>
+                            <a href={el?.["href"]} target="_blank" rel="noreferrer">
+                                <div key={index} className="card">
+                                    <img src={el.icon} alt={el.title} />
+                                </div>
+                            </a>
                         ))}
                     </ul>
                 </div>

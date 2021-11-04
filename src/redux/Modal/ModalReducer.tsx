@@ -8,7 +8,7 @@ const initialState = {
     fix: {},
     reportLink: "",
     buttonName: "",
-    buttonLink: ""
+    buttonLink: "",
 }
 
 const modalSlice = createSlice({
