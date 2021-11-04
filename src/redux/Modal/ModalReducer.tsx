@@ -3,7 +3,12 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     open: false,
     title: "",
-    button: ""
+    button: "",
+    message: "",
+    fix: {},
+    reportLink: "",
+    buttonName: "",
+    buttonLink: ""
 }
 
 const modalSlice = createSlice({
@@ -11,15 +16,25 @@ const modalSlice = createSlice({
     initialState,
     reducers: {
         handleOpenModal(state, { payload }) {
-            state.open = payload.value
+            state.open = payload.open
             state.title = payload.title
-            state.button = payload.button
+            state.message = payload.message
+            state.fix = payload.fix
+            state.reportLink = payload.reportLink
+            state.reportLink = payload.reportLink
+            state.buttonName = payload.buttonName
+            state.buttonLink = payload.buttonLink
+        },
+
+        handleCloseModal(state, { payload }) {
+            state.open = payload.value
         }
     }
 })
 
 export const {
-    handleOpenModal
+    handleOpenModal,
+    handleCloseModal
 } = modalSlice.actions
 
 export default modalSlice.reducer;
