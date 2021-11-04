@@ -1,5 +1,5 @@
 import React from 'react'
-import { Warning, CheckCircle, NearbyError } from '@mui/icons-material';
+import { Warning, CheckCircle } from '@mui/icons-material';
 
 export const WarningIcon = () => {
     return <Warning style={{ color: "#c9252d" }} />

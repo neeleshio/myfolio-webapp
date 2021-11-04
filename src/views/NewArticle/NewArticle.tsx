@@ -8,7 +8,6 @@ import { useModal } from '../../customHooks'
 function NewArticle() {
     const dispatch = useDispatch()
 
-    useModal('Somrthing went erong', 'Back')
 
     // dispatch(handleOpenModal({ value: true }))
 
