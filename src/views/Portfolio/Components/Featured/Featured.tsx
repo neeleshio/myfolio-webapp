@@ -15,7 +15,7 @@ function Featured() {
                 <h2>Featured ★</h2>
                 <div className="card-container">
                     <div className="wrapper">
-                        <h3>New Article🎉:  Implementing our own `split()` in Javascript.</h3>
+                        <h3>New Article🎉: Implementing our own `split()` in Javascript.</h3>
                         <button onClick={handleFeatured}>Check out</button>
                     </div>
                 </div>
