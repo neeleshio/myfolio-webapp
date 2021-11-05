@@ -48,7 +48,7 @@ function Content() {
             case 'p':
                 return <p>{res?.["data"]?.["text"]}</p>
             case 'cb':
-                return <ReactEmbedGist gist="JuanCarlosMarino/8c7cb71fa6311e0e813866d02f97f9cf" />
+                return <ReactEmbedGist gist={res?.["data"]?.["url"]} />
             case 'ol':
                 return (
                     <ol>
