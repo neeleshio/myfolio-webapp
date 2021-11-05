@@ -12,10 +12,10 @@ function Portfolio() {
         dispatch(handleOpenModal({
             open: true,
             title: "Site under development",
-            message: "Hi, this webapp is unoptimised as it is still in development. Only few features are avialble to public. Also you may expirience glitches & crashes, sorry for the inconvinience.",
+            message: "Hi, this webapp is unoptimized as it is still in development. Only few features are available for public. Also you may experience some glitches & crashes, sorry for the inconvenience.",
             fix: {},
             reportLink: "https://hi.com",
-            buttonName: "Close",
+            buttonName: "Ok",
             buttonLink: "/"
         }))
     }, [])

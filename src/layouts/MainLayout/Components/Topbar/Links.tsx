@@ -15,7 +15,7 @@ export const links = [
         path: '/journal'
     },
     {
-        name: 'Projects',
+        name: 'DSA',
         path: '/dsa'
     },
 
