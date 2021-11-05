@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { accomplishLists } from '../Accomplishments/AccomplishLists'
+import React from 'react'
 import './FeaturedStyles.scss'
+import { useHistory } from 'react-router-dom'
 
 function Featured() {
-    const [counter, setCounter] = useState(0)
+    const history = useHistory()
 
-    const time: number = 5000;
-    const delay: number = time * 0.25 / 100
-
-    useEffect(() => {
-        start()
-    }, [counter])
-
-    const start = (): void => {
-        if (counter <= 100) {
-            setTimeout(() => {
-                setCounter(counter + 0.25)
-            }, delay);
-        }
+    const handleFeatured = () => {
+        history.push('/journal/Implementing-our-own-%60split()%60-in-Javascript/6184ff6d6e98b1a96a160466')
     }
 
     return (
@@ -26,8 +15,8 @@ function Featured() {
                 <h2>Featured ★</h2>
                 <div className="card-container">
                     <div className="wrapper">
-                        <h3>No featured content!</h3>
-                        <button>Check out</button>
+                        <h3>New Article🎉:  Implementing our own `split()` in Javascript.</h3>
+                        <button onClick={handleFeatured}>Check out</button>
                     </div>
                 </div>
             </div>
