@@ -28,6 +28,11 @@ function ArticleCard() {
 		dispatch(handleArticleData({ data: article }))
 	};
 
+	const handleConvertDate = (value: string) => {
+		let date = value.split(" ")
+		return `${date[1]} ${date[2]}, ${date[3]}`
+	}
+
 	return (
 		articles.length > 0 ? (
 			<div id="articleCard">
@@ -54,7 +59,7 @@ function ArticleCard() {
 								</div>
 							</div>
 							<div className="meta_info">
-								<h4>{article?.["created"]}</h4>
+								<h4>{handleConvertDate(article?.["created"])}</h4>
 								<h4>·</h4>
 								<h4>{`5min read`}</h4>
 								<h4>·</h4>

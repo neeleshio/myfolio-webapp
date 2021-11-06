@@ -9,7 +9,7 @@ const browserHistory = createBrowserHistory()
 
 function App() {
   useEffect(() => {
-    if (process.env.REACT_APP_ENV !== "staging") {
+    if (process.env.REACT_APP_ENV === "staging") {
       handleUserAgent()
     }
   }, [])

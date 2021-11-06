@@ -27,6 +27,11 @@ function Content() {
         })
     }, [])
 
+    const handleConvertDate = (value: string) => {
+        let date = value.split(" ")
+        return `${date[1]} ${date[2]}, ${date[3]}`
+    }
+
     const handleSwitchContent = (res: any) => {
         switch (res.type) {
             case 'h':
@@ -89,7 +94,7 @@ function Content() {
                             <button className={`diff-${article?.["difficulty"]}`}></button>
                             <div>
                                 <h3>{article?.["topic"]}</h3>
-                                <h4>{article?.["created"]}</h4>
+                                <h4>Posted on {handleConvertDate(article?.["created"])}</h4>
                             </div>
                         </div>
                         <div className="content_body_wrapper">
