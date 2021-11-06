@@ -80,11 +80,13 @@ function ArticleCard() {
 								<Skeleton width={75} style={{ marginRight: "10px" }} />
 							</div>
 						</div>
-						<Skeleton width={100} count={2} />
-
+						<div className="meta_info">
+							<Skeleton width={100} style={{ marginRight: "10px" }} />
+							<Skeleton width={100} />
+						</div>
 					</div>
 					<div className="article_card--right">
-						<Skeleton className="imgg" />
+						<Skeleton className="imgg no-line" />
 					</div>
 				</div>
 			</div>
