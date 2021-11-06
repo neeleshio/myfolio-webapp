@@ -38,6 +38,7 @@
     "react-editor-js": "^1.10.0",
     "react-embed-gist": "^1.0.12",
     "react-icons": "^4.2.0",
+    "react-loading-skeleton": "^3.0.1",
     "react-redux": "^7.2.5",
     "react-router-dom": "^5.2.0",
     "react-router-scroll-to-top": "^1.1.2",
