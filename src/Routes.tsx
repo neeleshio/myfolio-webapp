@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, BrowserRouter } from "react-router-dom";
 import { PublicRoute } from "./utils";
 import { MainLayout } from "./layouts";
-import { Portfolio, Journal, ViewArticle, NewArticle } from "./views";
+import { Portfolio, Journal, ViewArticle, NewArticle, Apps, DSA } from "./views";
 
 function Routes() {
     return (
@@ -30,6 +30,18 @@ function Routes() {
                 path="/journal/new-article"
                 layout={MainLayout}
                 component={NewArticle}
+                exact
+            />
+            <PublicRoute
+                path="/apps"
+                layout={MainLayout}
+                component={Apps}
+                exact
+            />
+            <PublicRoute
+                path="/dsa"
+                layout={MainLayout}
+                component={DSA}
                 exact
             />
 

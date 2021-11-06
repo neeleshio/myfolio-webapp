@@ -1,0 +1,12 @@
+#apps {
+    h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(315deg, #d6d5d5 0%, #d7e1ec 74%);
+
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+    }
+}

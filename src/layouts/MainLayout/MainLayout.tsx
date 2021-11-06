@@ -9,7 +9,7 @@ const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
     return (
         <>
             <div id="mainLayout">
-                {(modalState["open"] && localStorage.getItem("closed") !== "true") && <Modal />}
+                {(modalState["open"] && sessionStorage.getItem("closed") !== "true") && <Modal />}
 
                 <Topbar />
 

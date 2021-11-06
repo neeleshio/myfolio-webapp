@@ -169,6 +169,43 @@
         ul {
             display: flex;
             justify-content: space-evenly;
+
+            li {
+                a {
+                    position: relative;
+
+                    &:hover {
+                        color: $navy-blue-text;
+                        font-weight: 600;
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%) scaleX(0);
+                        transform-origin: 50% 50%;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $navy-blue-bg;
+                        transition: transform 150ms;
+                    }
+
+                    &:hover:after {
+                        transform: translateX(-50%) scaleX(1);
+                    }
+                }
+
+                .is-active {
+                    color: $navy-blue-text;
+                    font-weight: 600;
+
+                    &:after {
+                        transform: translateX(-50%) scaleX(1);
+                    }
+                }
+            }
         }
     }
 }

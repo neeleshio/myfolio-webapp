@@ -44,9 +44,9 @@ function Topbar() {
                 <ul>
                     {Object.values(links).map((link, index) => (
                         <li key={index}>
-                            <a href={link.path}>
+                            <NavLink activeClassName='is-active' exact={link.path === "/" && true} to={link.path}>
                                 {link.name}
-                            </a>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
