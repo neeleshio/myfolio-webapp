@@ -9,7 +9,9 @@ const browserHistory = createBrowserHistory()
 
 function App() {
   useEffect(() => {
-    handleUserAgent()
+    if (process.env.REACT_APP_ENV === "prod") {
+      handleUserAgent()
+    }
   }, [])
 
   const handleUserAgent = () => {

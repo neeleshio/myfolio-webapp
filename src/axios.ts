@@ -1,5 +1,6 @@
 import axios from 'axios'
+import { BASE_URL } from './config'
 
 export default axios.create({
-    baseURL: 'https://j2ysckzfn2.execute-api.us-east-1.amazonaws.com'
+    baseURL: BASE_URL
 });
