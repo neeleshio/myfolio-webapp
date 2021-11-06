@@ -4,6 +4,9 @@ import Axios from '../../../../axios';
 import { useSelector, useDispatch } from 'react-redux'
 import { handleArticleLikes } from '../../../../redux/ViewArticle/ViewArticleReducer'
 import ReactEmbedGist from 'react-embed-gist';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import _ from 'lodash';
 
 function Content() {
     const [articleContent, setArticleContent] = useState([])
@@ -77,31 +80,52 @@ function Content() {
     }
 
     return (
-        <div id="content">
-            <div className="content_wrapper">
-                <img src={article?.["mainImg"]} alt="main-img" />
-                <div className="content_main">
-                    <div className="topic_wrapper">
-                        <button className={`diff-${article?.["difficulty"]}`}></button>
-                        <div>
-                            <h3>{article?.["topic"]}</h3>
-                            <h4>{article?.["created"]}</h4>
+        (articleContent.length > 0 && !_.isEmpty(article)) ? (
+            <div id="content">
+                <div className="content_wrapper">
+                    <img className="imgg" src={article?.["mainImg"]} alt="main-img" />
+                    <div className="content_main">
+                        <div className="topic_wrapper">
+                            <button className={`diff-${article?.["difficulty"]}`}></button>
+                            <div>
+                                <h3>{article?.["topic"]}</h3>
+                                <h4>{article?.["created"]}</h4>
+                            </div>
                         </div>
-                    </div>
-                    <div className="content_body_wrapper">
-                        <h1>{article?.["title"]}</h1>
+                        <div className="content_body_wrapper">
+                            <h1>{article?.["title"]}</h1>
 
-                        <div className="content_body">
-                            {articleContent && (
-                                Object.values(articleContent).map((res: any) => (
-                                    handleSwitchContent(res)
-                                ))
-                            )}
+                            <div className="content_body">
+                                {articleContent && (
+                                    Object.values(articleContent).map((res: any) => (
+                                        handleSwitchContent(res)
+                                    ))
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        ) : (
+            <div id="content">
+                <div className="content_wrapper">
+                    <Skeleton className="imgg no-line" />
+                    <div className="content_main">
+                        <Skeleton width={200} height={30} />
+                        <div className="content_body_wrapper" style={{ marginTop: 10 }}>
+                            <Skeleton height={50} />
+                            <br />
+                            <div className="content_body">
+                                <Skeleton />
+                                <Skeleton width={300} />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        )
+
     )
 }
 
