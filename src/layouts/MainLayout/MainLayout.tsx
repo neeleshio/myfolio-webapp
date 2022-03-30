@@ -4,12 +4,12 @@ import Modal from '../../components/Modal'
 import { useSelector } from 'react-redux'
 
 const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
-    const modalState = useSelector((state: any) => state.modal)
+    // const modalState = useSelector((state: any) => state.modal)
 
     return (
         <>
             <div id="mainLayout">
-                {(modalState["open"] && sessionStorage.getItem("closed") !== "true") && <Modal />}
+                {/* {(modalState["open"] && sessionStorage.getItem("closed") !== "true") && <Modal />} */}
 
                 <Topbar />
 
