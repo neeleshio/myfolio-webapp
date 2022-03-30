@@ -1,8 +1,15 @@
 export const companies = [
     {
+        name: "CampK12",
+        designation: "SDE-1 (Frontend)",
+        timeline: "Jan 2022 - Current",
+        logo: "./images/campk12.svg",
+        aboutRole: "Development, maintenance and migration (from react to nextjs) of company's main website and also we bringing the backend right inside nextjs."
+    },
+    {
         name: "PiChain",
         designation: "SDE-1 (Frontend)",
-        timeline: "Nov 2020 - Current",
+        timeline: "Nov 2020 - Nov 2021",
         logo: "./images/pichain.svg",
         aboutRole: "As a Frontend Engineer, I'm handling the overall frontend development of company's 2 main products Esign & Estamp."
     },

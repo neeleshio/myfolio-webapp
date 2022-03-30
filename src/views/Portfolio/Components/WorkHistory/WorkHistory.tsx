@@ -28,7 +28,7 @@ function WorkHistory() {
             <div className="container">
                 <h2>Work History (Recent 3)</h2>
                 <div className="card-container">
-                    {Object.values(companies).map((el, index: number) => (
+                    {Object.values(companies).slice(0,3).map((el, index: number) => (
                         <CardFlip isFlipped={state?.[`card${index}`]} flipDirection="horizontal">
                             <div
                                 key={index}
