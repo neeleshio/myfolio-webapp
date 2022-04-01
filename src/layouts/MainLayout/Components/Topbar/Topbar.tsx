@@ -1,18 +1,17 @@
 import React from 'react'
-import { links } from './Links'
+import { links } from './data'
 import { IoMdNotificationsOutline, IoIosMoon } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
 import './TopbarStyles.scss'
+import logo from './main-logo.svg'
 
 function Topbar() {
     return (
         <div id="topbar">
             <div className="topbar-container">
-                <div className="logo">
-                    <button className="btn-1"></button>
-                    <button className="btn-2"></button>
-                    <button className="btn-3"></button>
-                </div>
+                <NavLink className="logo" to={'/'}>
+                    <img src={logo} alt='logo'/>
+                </NavLink>
                 <div className="topbar_right">
                     <div className="nav-links">
                         <ul>

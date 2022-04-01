@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { links } from './Social'
+import { links } from './data'
 import './HeroStyles.scss'
 import CountUp from 'react-countup';
 

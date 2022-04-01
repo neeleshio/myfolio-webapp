@@ -34,6 +34,11 @@
         .logo {
             display: flex;
 
+            img {
+                width: 50px;
+                height: 20px;
+            }
+
             h1 {
                 font-size: 18px;
                 font-weight: 600;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { companies } from './Companies'
+import { companies } from './data'
 import CardFlip from 'react-card-flip';
 import './WorkHistoryStyles.scss'
 

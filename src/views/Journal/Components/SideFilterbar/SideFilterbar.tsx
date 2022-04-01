@@ -1,5 +1,5 @@
 import React from 'react'
-import { topics } from './Topics'
+import { topics } from './data'
 import './SideFilterbarStyles.scss'
 
 function SideFilterbar() {

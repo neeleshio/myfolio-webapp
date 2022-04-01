@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { accomplishLists } from './AccomplishLists'
+import { accomplishLists } from './data'
 import './AccomplishmentsStyles.scss'
 
 function Accomplishments() {

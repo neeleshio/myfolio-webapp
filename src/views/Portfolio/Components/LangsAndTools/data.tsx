@@ -12,6 +12,10 @@ export const languages = [
         icon: "./images/ts.svg",
     },
     {
+        title: "NextJS",
+        icon: "./images/nextjs.svg",
+    },
+    {
         title: "Redux",
         icon: "./images/redux.svg",
     },

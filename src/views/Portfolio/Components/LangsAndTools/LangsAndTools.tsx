@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { languages } from './Languages'
+import { languages } from './data'
 import './LangsAndToolsStyles.scss'
 
 function LangsAndTools() {
