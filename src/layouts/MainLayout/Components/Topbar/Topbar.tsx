@@ -1,11 +1,18 @@
 import React from 'react'
 import { links } from './data'
 import { IoMdNotificationsOutline, IoIosMoon } from "react-icons/io";
+import { MdDarkMode } from "react-icons/md";
+import { FaSun } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import './TopbarStyles.scss'
 import logo from './main-logo.svg'
+import { useDispatch, useSelector } from 'react-redux';
+import { handleToggleTheme } from '../../../../redux/Topbar/TopbarReducer';
 
 function Topbar() {
+    const dispatch = useDispatch()
+    const state = useSelector((state: any) => state.topbar)
+
     return (
         <div id="topbar">
             <div className="topbar-container">
@@ -25,17 +32,17 @@ function Topbar() {
                         </ul>
                     </div>
                     <div className="extra-buttons">
+                        <button onClick={(event: React.MouseEvent<HTMLElement>) => dispatch(handleToggleTheme())}>
+                            {state.darkTheme ? <FaSun /> : <MdDarkMode/>}
+                        </button>
                         <NavLink to="/journal/new-article">
                             <button className="write_btn">
                                 Write
                             </button>
                         </NavLink>
-                        <button>
-                            <IoIosMoon />
-                        </button>
-                        <button>
+                        {/* <button>
                             <IoMdNotificationsOutline />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>

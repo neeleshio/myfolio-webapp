@@ -10,7 +10,7 @@ export const links = [
     {
         title: 'Youtube',
         icon: './images/youtube.svg',
-        href: ""
+        href: "https://youtube.com/@nslivevlogs"
     },
     {
         title: 'Github',

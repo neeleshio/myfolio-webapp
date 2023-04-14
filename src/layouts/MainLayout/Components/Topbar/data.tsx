@@ -7,16 +7,16 @@ export const links = [
         path: '/'
     },
     {
-        name: 'Apps',
-        path: '/apps'
+        name: 'Projects',
+        path: '/projects'
     },
     {
         name: 'Journal',
         path: '/journal'
     },
-    {
-        name: 'DSA',
-        path: '/dsa'
-    },
+    // {
+    //     name: 'DSA',
+    //     path: '/dsa'
+    // },
 
 ]

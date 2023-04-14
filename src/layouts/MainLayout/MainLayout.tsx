@@ -2,13 +2,23 @@ import React from 'react'
 import { Topbar } from './Components'
 import Modal from '../../components/Modal'
 import { useSelector } from 'react-redux'
+import styled from 'styled-components'
 
-const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
+const StyledMainLayout = styled.div`
+    background-color: ${(props) => props.theme.layoutBg};
+    height: 100vh;
+
+    main {
+        background-color: ${(props) => props.theme.layoutBg};
+    }
+`
+
+const MainLayout = ({ children }) => {
     // const modalState = useSelector((state: any) => state.modal)
 
     return (
         <>
-            <div id="mainLayout">
+            <StyledMainLayout>
                 {/* {(modalState["open"] && sessionStorage.getItem("closed") !== "true") && <Modal />} */}
 
                 <Topbar />
@@ -17,7 +27,7 @@ const MainLayout: React.FC<React.ReactNode> = ({ children }) => {
                     <div className="navbar-bg"></div>
                     {children}
                 </main>
-            </div>
+            </StyledMainLayout>
         </>
     )
 }

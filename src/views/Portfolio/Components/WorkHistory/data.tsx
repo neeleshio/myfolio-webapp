@@ -4,7 +4,7 @@ export const companies = [
         designation: "SDE-1 (Frontend)",
         timeline: "Jan 2022 - Current",
         logo: "./images/campk12.svg",
-        aboutRole: "Development, maintenance and migration (from react to nextjs) of company's main website and also we bringing the backend right inside nextjs."
+        aboutRole: "Development, maintenance and migration (from react to nextjs) of company's 4 products (2 dashboars & 2 websites)"
     },
     {
         name: "PiChain",

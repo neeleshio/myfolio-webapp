@@ -4,6 +4,9 @@ import { Router } from 'react-router-dom'
 import Routes from './Routes'
 import Bowser from 'bowser'
 import Axios from './axios'
+import { ThemeProvider } from 'styled-components';
+import { darkThemecolor, lightThemecolor } from './components/Tools/theme'
+import { useSelector } from 'react-redux';
 
 const browserHistory = createBrowserHistory()
 
@@ -13,6 +16,8 @@ function App() {
       handleUserAgent()
     }
   }, [])
+
+  const state = useSelector((state: any) => state.topbar)
 
   const handleUserAgent = () => {
     fetch("https://api.ipify.org?format=json")
@@ -38,7 +43,9 @@ function App() {
 
   return (
     <Router history={browserHistory}>
-      <Routes />
+      <ThemeProvider theme={state.darkTheme ? darkThemecolor : lightThemecolor}>
+        <Routes />
+      </ThemeProvider>
     </Router>
   );
 }

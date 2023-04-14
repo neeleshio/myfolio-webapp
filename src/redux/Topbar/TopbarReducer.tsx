@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    open: true
+    open: true,
+    darkTheme: false
 }
 
 const topbarSlice = createSlice({
@@ -10,12 +11,16 @@ const topbarSlice = createSlice({
     reducers: {
         handleClose(state) {
             state.open = false
+        },
+        handleToggleTheme(state) {
+            // state.darkTheme = !state.darkTheme
         }
     }
 })
 
 export const {
-    handleClose
+    handleClose,
+    handleToggleTheme
 } = topbarSlice.actions
 
 export default topbarSlice.reducer

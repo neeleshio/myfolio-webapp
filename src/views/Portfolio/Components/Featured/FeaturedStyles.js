@@ -1,6 +1,8 @@
-@import '../../../../styles/config.scss';
+// @import '../../../../styles/config.scss';
+import styled from 'styled-components'
 
-#featured {
+export const StyledFeatured = styled.div`
+&#featured {
     margin: 40px 22px 0 22px;
 
     @media screen and (max-width: 630px) {
@@ -36,7 +38,7 @@
                 font-size: 12px;
                 font-weight: 500;
                 margin-bottom: 20px;
-                color: $white-text;
+                color: ${(props) => props.theme.primary};
             }
 
             button {
@@ -50,3 +52,5 @@
 
     }
 }
+`
+

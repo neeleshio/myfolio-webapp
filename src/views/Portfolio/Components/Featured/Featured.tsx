@@ -1,5 +1,5 @@
 import React from 'react'
-import './FeaturedStyles.scss'
+import { StyledFeatured } from './FeaturedStyles.js'
 import { useHistory } from 'react-router-dom'
 
 function Featured() {
@@ -10,7 +10,7 @@ function Featured() {
     }
 
     return (
-        <div id="featured">
+        <StyledFeatured id="featured">
             <div className="container">
                 <h2>Featured ★</h2>
                 <div className="card-container">
@@ -20,7 +20,7 @@ function Featured() {
                     </div>
                 </div>
             </div>
-        </div>
+        </StyledFeatured>
     )
 }
 

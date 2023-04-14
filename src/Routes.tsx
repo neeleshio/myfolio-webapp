@@ -33,7 +33,7 @@ function Routes() {
                 exact
             />
             <PublicRoute
-                path="/apps"
+                path="/projects"
                 layout={MainLayout}
                 component={Apps}
                 exact

@@ -68,7 +68,7 @@
 
             .nav-links {
                 min-width: 400px;
-                padding-right: 50px;
+                padding-right: 15px;
                 font-size: 13px;
 
                 //breakpoint
@@ -83,7 +83,7 @@
 
 
                     li {
-                        margin: 0 15px;
+                        // margin: 0 15px;
 
                         a {
                             position: relative;
@@ -131,7 +131,7 @@
             }
 
             .extra-buttons {
-                width: 150px;
+                width: 110px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
